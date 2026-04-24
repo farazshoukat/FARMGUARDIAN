@@ -1,0 +1,8 @@
+{
+  "name": "FarmGuardian",
+  "displayName": "FarmGuardian",
+  "android": {
+    "package": "com.farmguardian"
+  }
+}
+

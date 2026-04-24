@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>FarmGuardian needs camera access to take pictures of crop leaves for disease detection.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>FarmGuardian needs photo library access to upload crop leaf images.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>FarmGuardian needs location access to provide region-specific farming recommendations.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>FarmGuardian needs location access to mark your farm on the map.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>FarmGuardian needs location access for geospatial mapping features.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>FarmGuardian may need microphone access for voice input features.</string>
+</dict>
+</plist>
+

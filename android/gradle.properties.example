@@ -1,0 +1,8 @@
+# Add these lines to android/gradle.properties
+# DO NOT commit your actual passwords to Git!
+
+MYAPP_RELEASE_STORE_FILE=farmguardian-release.keystore
+MYAPP_RELEASE_KEY_ALIAS=farmguardian
+MYAPP_RELEASE_STORE_PASSWORD=YourPasswordHere
+MYAPP_RELEASE_KEY_PASSWORD=YourPasswordHere
+
