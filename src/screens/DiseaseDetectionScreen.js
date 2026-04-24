@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -13,7 +13,7 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { COLORS, CROP_LIST } from '../utils/constants';
 import { detectDisease } from '../services/diseaseService';
-import { convertImageToBase64 } from '../utils/helpers';
+import { releaseModel } from '../services/tfliteService';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import CropSelector from '../components/CropSelector';
@@ -27,6 +27,15 @@ const DiseaseDetectionScreen = ({ navigation }) => {
   const [imageUri, setImageUri] = useState(null);
   const [detecting, setDetecting] = useState(false);
   const [result, setResult] = useState(null);
+
+  // Release the loaded model from memory when leaving the screen
+  useEffect(() => {
+    return () => {
+      if (selectedCrop) {
+        releaseModel(selectedCrop);
+      }
+    };
+  }, [selectedCrop]);
 
   const handleTakePhoto = () => {
     if (!selectedCrop) {
@@ -91,8 +100,7 @@ const DiseaseDetectionScreen = ({ navigation }) => {
 
     try {
       setDetecting(true);
-      const base64 = await convertImageToBase64(imageUri);
-      const detection = await detectDisease(base64, selectedCrop, user?.id);
+      const detection = await detectDisease(imageUri, selectedCrop, user?.id);
       setResult(detection);
     } catch (error) {
       Alert.alert(t('common.error'), error.message || t('errors.somethingWrong'));
