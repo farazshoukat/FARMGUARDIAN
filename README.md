@@ -191,6 +191,7 @@ The app automatically switches to RTL layout when Urdu is selected. No manual co
 
 This project is licensed under the MIT License.....
 
+
 ## 👥 Team
 
 Musadiq Qaysir @musadiq7860
@@ -201,7 +202,10 @@ Abdullah Arshad @AbdullahArshad21
 ## 📞 Support
 
 For issues or questions, contact the development team.
-
+BY ABDULLAH ARSHAD
+   FARAZ SHOUKAT
+   MUSADIQ QAYSER
+  
 ---
 
 **Note**: This is a production-ready application with mock APIs. Connect to real backend services for full functionality.
