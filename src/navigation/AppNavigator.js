@@ -17,14 +17,15 @@ import RegistrationScreen from '../screens/RegistrationScreen';
 import BottomTabNavigator from './BottomTabNavigator';
 
 // Additional Screens
-import MapScreen from '../screens/MapScreen';
+import MandiPricesScreen from '../screens/MandiPricesScreen';
 import ReportsScreen from '../screens/ReportsScreen';
 import AdminScreen from '../screens/AdminScreen';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
+  const L = currentLanguage === 'en';
   const { user, token, isGuest, isProfileComplete } = useAuth();
 
   // Determine the initial route based on auth + profile state
@@ -95,9 +96,9 @@ const AppNavigator = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Map"
-        component={MapScreen}
-        options={{ title: t('map.title') }}
+        name="MandiPrices"
+        component={MandiPricesScreen}
+        options={{ title: L ? 'Mandi Prices' : 'منڈی کے ریٹ' }}
       />
       <Stack.Screen
         name="Reports"

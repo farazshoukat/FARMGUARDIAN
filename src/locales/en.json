@@ -27,6 +27,7 @@
     "disease": "Disease",
     "yield": "Yield",
     "advisory": "Advisory",
+    "mandiPrices": "Mandi",
     "profile": "Profile"
   },
   "auth": {
@@ -118,7 +119,7 @@
     "detectDisease": "Detect Disease",
     "predictYield": "Predict Yield",
     "soilAdvisory": "Soil Advisory",
-    "viewMap": "View Map",
+    "mandiPrices": "Mandi Prices",
     "recentActivity": "Recent Activity",
     "noActivity": "No recent activity",
     "activityDisease": "Disease Detection",

@@ -7,10 +7,13 @@ import {
   Image,
   Alert,
   TouchableOpacity,
+  PermissionsAndroid,
+  Platform,
 } from 'react-native';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { COLORS, CROP_LIST } from '../utils/constants';
 import { detectDisease } from '../services/diseaseService';
 import { releaseModel } from '../services/tfliteService';
@@ -25,8 +28,10 @@ import Loader from '../components/Loader';
 const DiseaseDetectionScreen = ({ navigation }) => {
   const { user } = useAuth();
   const { t, currentLanguage } = useLanguage();
+  const { colors } = useTheme();
   const L = currentLanguage === 'en';
   const [selectedCrop, setSelectedCrop] = useState(null);
+  const [showCropWarning, setShowCropWarning] = useState(false);
   const [imageUri, setImageUri] = useState(null);
   const [detecting, setDetecting] = useState(false);
   const [result, setResult] = useState(null);
@@ -40,10 +45,37 @@ const DiseaseDetectionScreen = ({ navigation }) => {
     };
   }, [selectedCrop]);
 
-  const handleTakePhoto = () => {
+  const handleTakePhoto = async () => {
     if (!selectedCrop) {
-      Alert.alert(t('common.error'), t('disease.selectCropFirst'));
+      setShowCropWarning(true);
       return;
+    }
+    setShowCropWarning(false);
+
+    await new Promise((resolve) =>
+      Alert.alert(
+        L ? 'Important Reminder' : 'اہم یاد دہانی',
+        L
+          ? `Please take a clear photo of your selected crop (${CROP_LIST.find(c => c.id === selectedCrop)?.nameEn || selectedCrop}). Images of other crops or objects may give inaccurate results.`
+          : `براہ کرم اپنی منتخب فصل (${CROP_LIST.find(c => c.id === selectedCrop)?.nameUr || selectedCrop}) کی واضح تصویر لیں۔ دوسری فصلوں یا اشیاء کی تصاویر سے غلط نتائج آ سکتے ہیں۔`,
+        [{ text: L ? 'OK' : 'ٹھیک ہے', onPress: resolve }]
+      )
+    );
+
+    if (Platform.OS === 'android') {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.CAMERA,
+        {
+          title: L ? 'Camera Permission' : 'کیمرہ اجازت',
+          message: L ? 'FarmGuardian needs camera access to take crop photos.' : 'فارم گارڈین کو فصل کی تصاویر لینے کے لیے کیمرے کی ضرورت ہے۔',
+          buttonPositive: L ? 'Allow' : 'اجازت دیں',
+          buttonNegative: L ? 'Deny' : 'انکار',
+        }
+      );
+      if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
+        Alert.alert(L ? 'Permission Denied' : 'اجازت نہیں ملی', L ? 'Camera access is required to take photos.' : 'تصاویر لینے کے لیے کیمرے کی اجازت ضروری ہے۔');
+        return;
+      }
     }
 
     launchCamera(
@@ -70,28 +102,30 @@ const DiseaseDetectionScreen = ({ navigation }) => {
 
   const handlePickImage = () => {
     if (!selectedCrop) {
-      Alert.alert(t('common.error'), t('disease.selectCropFirst'));
+      setShowCropWarning(true);
       return;
     }
+    setShowCropWarning(false);
 
-    launchImageLibrary(
-      {
-        mediaType: 'photo',
-        quality: 0.8,
-      },
-      (response) => {
-        if (response.didCancel) {
-          return;
+    Alert.alert(
+      L ? 'Important Reminder' : 'اہم یاد دہانی',
+      L
+        ? `Please upload a clear image of your selected crop (${CROP_LIST.find(c => c.id === selectedCrop)?.nameEn || selectedCrop}). Images of other crops or objects may give inaccurate results.`
+        : `براہ کرم اپنی منتخب فصل (${CROP_LIST.find(c => c.id === selectedCrop)?.nameUr || selectedCrop}) کی واضح تصویر اپ لوڈ کریں۔ دوسری فصلوں یا اشیاء کی تصاویر سے غلط نتائج آ سکتے ہیں۔`,
+      [{ text: L ? 'OK' : 'ٹھیک ہے', onPress: () => launchImageLibrary(
+        { mediaType: 'photo', quality: 0.8 },
+        (response) => {
+          if (response.didCancel) return;
+          if (response.errorCode) {
+            Alert.alert(t('common.error'), response.errorMessage);
+            return;
+          }
+          if (response.assets && response.assets[0]) {
+            setImageUri(response.assets[0].uri);
+            setResult(null);
+          }
         }
-        if (response.errorCode) {
-          Alert.alert(t('common.error'), response.errorMessage);
-          return;
-        }
-        if (response.assets && response.assets[0]) {
-          setImageUri(response.assets[0].uri);
-          setResult(null);
-        }
-      }
+      ) }]
     );
   };
 
@@ -129,7 +163,7 @@ const DiseaseDetectionScreen = ({ navigation }) => {
 
   if (result) {
     return (
-      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={styles.content}>
         <Card title={t('disease.result')}>
           {imageUri && (
             <Image source={{ uri: imageUri }} style={styles.resultImage} />
@@ -185,23 +219,23 @@ const DiseaseDetectionScreen = ({ navigation }) => {
               {!isNoSpray && (
                 <View style={styles.sprayRow}>
                   <Text style={styles.sprayLabel}>{L ? 'Amount:' : 'مقدار:'}</Text>
-                  <Text style={styles.sprayValue}>{sprayInfo.amountPerAcreUr}</Text>
+                  <Text style={styles.sprayValue}>{L ? (sprayInfo.amountPerAcreEn || sprayInfo.amountPerAcreUr) : sprayInfo.amountPerAcreUr}</Text>
                 </View>
               )}
               <View style={styles.sprayRow}>
                 <Text style={styles.sprayLabel}>{L ? 'Timing:' : 'وقت:'}</Text>
-                <Text style={styles.sprayValue}>{sprayInfo.timingUr}</Text>
+                <Text style={styles.sprayValue}>{L ? (sprayInfo.timingEn || sprayInfo.timingUr) : sprayInfo.timingUr}</Text>
               </View>
               <View style={styles.sprayRow}>
                 <Text style={styles.sprayLabel}>{L ? 'Frequency:' : 'تعدد:'}</Text>
-                <Text style={styles.sprayValue}>{sprayInfo.frequencyUr}</Text>
+                <Text style={styles.sprayValue}>{L ? (sprayInfo.frequencyEn || sprayInfo.frequencyUr) : sprayInfo.frequencyUr}</Text>
               </View>
               <View style={styles.sprayCaution}>
-                <Text style={styles.sprayCautionText}>{sprayInfo.cautionUr}</Text>
+                <Text style={styles.sprayCautionText}>{L ? (sprayInfo.cautionEn || sprayInfo.cautionUr) : sprayInfo.cautionUr}</Text>
               </View>
               {sprayInfo.altSprayUr && sprayInfo.altSprayUr !== '—' && (
                 <View style={styles.sprayAlt}>
-                  <Text style={styles.sprayAltText}>{sprayInfo.altSprayUr}</Text>
+                  <Text style={styles.sprayAltText}>{L ? (sprayInfo.altSprayEn || sprayInfo.altSprayUr) : sprayInfo.altSprayUr}</Text>
                 </View>
               )}
             </Card>
@@ -225,17 +259,33 @@ const DiseaseDetectionScreen = ({ navigation }) => {
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+    <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={styles.content}>
       <Text style={styles.title}>{t('disease.title')}</Text>
       
       <Card>
-        <Text style={styles.label}>{t('disease.selectCrop')}</Text>
+        <Text style={styles.label}>
+          {t('disease.selectCrop')} <Text style={styles.required}>*</Text>
+        </Text>
         <CropSelector
           selectedCrop={selectedCrop}
-          onSelectCrop={setSelectedCrop}
+          onSelectCrop={(crop) => { setSelectedCrop(crop); setShowCropWarning(false); }}
           crops={CROP_LIST}
         />
+        {showCropWarning && (
+          <Text style={styles.cropWarning}>
+            {L ? '⚠️ Crop selection is required before uploading an image.' : '⚠️ تصویر اپ لوڈ کرنے سے پہلے فصل کا انتخاب لازمی ہے۔'}
+          </Text>
+        )}
       </Card>
+
+      {/* Disclaimer */}
+      <View style={styles.disclaimer}>
+        <Text style={styles.disclaimerText}>
+          {L
+            ? '📌 Only upload images of: Maize, Wheat, Rice, Potato, or Tomato crops. Irrelevant images may give inaccurate results.'
+            : '📌 صرف مکئی، گندم، چاول، آلو، یا ٹماٹر کی فصل کی تصاویر اپ لوڈ کریں۔ غیر متعلقہ تصاویر سے غلط نتائج آ سکتے ہیں۔'}
+        </Text>
+      </View>
 
       {imageUri && (
         <Card>
@@ -263,7 +313,7 @@ const DiseaseDetectionScreen = ({ navigation }) => {
 
       {imageUri && (
         <Button
-          title="تجزیہ شروع کریں"
+          title={L ? 'Start Analysis' : 'تجزیہ شروع کریں'}
           onPress={handleDetect}
           style={styles.button}
         />
@@ -298,6 +348,29 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: COLORS.text,
     marginBottom: 8,
+  },
+  required: {
+    color: '#C62828',
+    fontWeight: '700',
+  },
+  cropWarning: {
+    color: '#C62828',
+    fontSize: 13,
+    marginTop: 6,
+    fontStyle: 'italic',
+  },
+  disclaimer: {
+    backgroundColor: '#E8F5E9',
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 12,
+    borderLeftWidth: 3,
+    borderLeftColor: '#2E7D32',
+  },
+  disclaimerText: {
+    fontSize: 12,
+    color: '#2E7D32',
+    lineHeight: 18,
   },
   buttonContainer: {
     flexDirection: 'row',

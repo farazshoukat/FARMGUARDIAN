@@ -10,6 +10,7 @@ import DiseaseDetectionScreen from '../screens/DiseaseDetectionScreen';
 import YieldPredictionScreen from '../screens/YieldPredictionScreen';
 import AdvisoryScreen from '../screens/AdvisoryScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import MandiPricesScreen from '../screens/MandiPricesScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,6 +35,9 @@ const BottomTabNavigator = () => {
               break;
             case 'Advisory':
               iconName = focused ? 'lightbulb' : 'lightbulb-outline';
+              break;
+            case 'MandiPrices':
+              iconName = focused ? 'store' : 'store-outline';
               break;
             case 'Profile':
               iconName = focused ? 'account' : 'account-outline';
@@ -98,6 +102,14 @@ const BottomTabNavigator = () => {
         options={{
           tabBarLabel: t('navigation.advisory'),
           title: t('advisory.title'),
+        }}
+      />
+      <Tab.Screen
+        name="MandiPrices"
+        component={MandiPricesScreen}
+        options={{
+          tabBarLabel: t('navigation.mandiPrices'),
+          title: t('navigation.mandiPrices'),
         }}
       />
       <Tab.Screen

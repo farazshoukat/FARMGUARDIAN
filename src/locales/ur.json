@@ -26,8 +26,7 @@
     "home": "ہوم",
     "disease": "بیماری",
     "yield": "پیداوار",
-    "advisory": "مشورہ",
-    "profile": "پروفائل"
+    "advisory": "مشورہ",    "mandiPrices": "منڈی",    "profile": "پروفائل"
   },
   "auth": {
     "welcome": "فارم گارڈین میں خوش آمدید",
@@ -118,7 +117,7 @@
     "detectDisease": "بیماری کی تشخیص",
     "predictYield": "پیداوار کی پیشن گوئی",
     "soilAdvisory": "مٹی کا مشورہ",
-    "viewMap": "نقشہ دیکھیں",
+    "mandiPrices": "منڈی کے ریٹ",
     "recentActivity": "حالیہ سرگرمی",
     "noActivity": "کوئی حالیہ سرگرمی نہیں",
     "activityDisease": "بیماری کی تشخیص",

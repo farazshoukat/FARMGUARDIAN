@@ -3,9 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
-  KeyboardAvoidingView,
-  Platform,
   Alert,
   TouchableOpacity,
 } from 'react-native';
@@ -86,14 +83,8 @@ const SignUpScreen = ({ navigation }) => {
   };
 
   return (
-    <KeyboardAvoidingView
-      style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    >
-      <ScrollView 
-        contentContainerStyle={styles.scrollContent}
-        keyboardShouldPersistTaps="handled"
-      >
+    <View style={styles.container}>
+      <View style={styles.inner}>
         {/* Header */}
         <View style={styles.header}>
           <BrandLogo variant="full" size="large" style={{ marginBottom: 16 }} />
@@ -182,8 +173,8 @@ const SignUpScreen = ({ navigation }) => {
             <Text style={styles.loginLink}>{t('auth.login')}</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView>
-    </KeyboardAvoidingView>
+      </View>
+    </View>
   );
 };
 
@@ -191,15 +182,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.background,
+    overflow: 'hidden',
   },
-  scrollContent: {
-    flexGrow: 1,
+  inner: {
+    flex: 1,
     padding: 24,
+    justifyContent: 'center',
+    overflow: 'hidden',
   },
   header: {
     alignItems: 'center',
-    marginTop: 40,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   title: {
     fontSize: 28,

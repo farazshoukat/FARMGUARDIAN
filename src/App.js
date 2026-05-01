@@ -4,13 +4,16 @@ import { StatusBar } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { useTheme } from './context/ThemeContext';
 import AppNavigator from './navigation/AppNavigator';
 import Loader from './components/Loader';
 import { COLORS } from './utils/constants';
 import './locales/i18n';
 
 const AppContent = () => {
-  const { loading, isAuthenticated } = useAuth();
+  const { loading } = useAuth();
+  const { isDarkMode } = useTheme();
 
   if (loading) {
     return <Loader />;
@@ -18,7 +21,10 @@ const AppContent = () => {
 
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} />
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={isDarkMode ? '#121212' : COLORS.primary}
+      />
       <AppNavigator />
     </>
   );
@@ -27,13 +33,15 @@ const AppContent = () => {
 const App = () => {
   return (
     <PaperProvider>
-      <AuthProvider>
-        <LanguageProvider>
-          <NavigationContainer>
-            <AppContent />
-          </NavigationContainer>
-        </LanguageProvider>
-      </AuthProvider>
+      <ThemeProvider>
+        <AuthProvider>
+          <LanguageProvider>
+            <NavigationContainer>
+              <AppContent />
+            </NavigationContainer>
+          </LanguageProvider>
+        </AuthProvider>
+      </ThemeProvider>
     </PaperProvider>
   );
 };

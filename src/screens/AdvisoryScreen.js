@@ -9,6 +9,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { COLORS, CROP_LIST, SOIL_COLORS } from '../utils/constants';
 import { getSmartAdvisory, getCropCalendar } from '../services/advisoryService';
 import { getWeatherForecast, DISTRICT_COORDS } from '../services/weatherService';
@@ -62,29 +63,35 @@ const PickerField = ({ label, value, placeholder, onPress, colorDot }) => (
 
 // ─── Weather Card ────────────────────────────────────────────────────────────
 
-const WeatherCard = ({ weather, onRefresh, loading }) => {
-  const rainDays = weather.days.filter((d) => d.willRain).map((d) => d.dayUr);
+const WeatherCard = ({ weather, onRefresh, loading, isEnglish }) => {
+  const rainDays = weather.days
+    .filter((d) => d.willRain)
+    .map((d) => (isEnglish ? (d.dayEn || d.dayUr) : d.dayUr));
   const rainWarning = rainDays.length > 0;
 
   return (
     <View style={styles.weatherCard}>
       <View style={styles.weatherHeader}>
-        <Text style={styles.weatherTitle}>موسم کی صورتحال</Text>
+        <Text style={styles.weatherTitle}>
+          {isEnglish ? 'Weather Forecast' : 'موسم کی صورتحال'}
+        </Text>
         <TouchableOpacity onPress={onRefresh} disabled={loading}>
           <Text style={styles.refreshBtn}>{loading ? '...' : '\ud83d\udd04'}</Text>
         </TouchableOpacity>
       </View>
 
-      {weather.districtNameUr && (
+      {(weather.districtNameUr || weather.districtNameEn) && (
         <Text style={styles.fallbackNote}>
-          📍 {weather.districtNameUr}
+          📍 {isEnglish ? (weather.districtNameEn || weather.districtNameUr) : weather.districtNameUr}
         </Text>
       )}
 
       <View style={styles.weatherDays}>
         {weather.days.map((day, i) => (
           <View key={i} style={styles.weatherDay}>
-            <Text style={styles.weatherDayName}>{day.dayUr}</Text>
+            <Text style={styles.weatherDayName}>
+              {isEnglish ? (day.dayEn || day.dayUr) : day.dayUr}
+            </Text>
             <Text style={styles.weatherEmoji}>{day.emoji}</Text>
             <Text style={styles.weatherTemp}>{day.tempMax}°C</Text>
             <Text style={styles.weatherRain}>{day.rainChance}%</Text>
@@ -95,7 +102,9 @@ const WeatherCard = ({ weather, onRefresh, loading }) => {
       {rainWarning && (
         <View style={styles.rainWarning}>
           <Text style={styles.rainWarningText}>
-            {'\u26a0\ufe0f'} {rainDays.join(' اور ')} بارش متوقع ہے — آج پانی نہ دیں
+            {isEnglish
+              ? `⚠️ Rain expected on ${rainDays.join(' & ')} — skip irrigation today`
+              : `⚠️ ${rainDays.join(' اور ')} بارش متوقع ہے — آج پانی نہ دیں`}
           </Text>
         </View>
       )}
@@ -105,7 +114,7 @@ const WeatherCard = ({ weather, onRefresh, loading }) => {
 
 // ─── Fertilizer Checklist ────────────────────────────────────────────────────
 
-const FertilizerChecklist = ({ schedule, checkedIds, onToggle }) => (
+const FertilizerChecklist = ({ schedule, checkedIds, onToggle, isEnglish }) => (
   <View>
     {(schedule || []).map((item) => {
       const checked = checkedIds.includes(item.id);
@@ -121,10 +130,10 @@ const FertilizerChecklist = ({ schedule, checkedIds, onToggle }) => (
           </View>
           <View style={styles.checkContent}>
             <Text style={[styles.checkFert, checked && styles.checkFertDone]}>
-              {item.fertUr}
+              {isEnglish ? (item.fertEn || item.fertUr) : item.fertUr}
             </Text>
-            <Text style={styles.checkWeek}>{item.weekUr}</Text>
-            <Text style={styles.checkNote}>{'\ud83d\udccc'} {item.noteUr}</Text>
+            <Text style={styles.checkWeek}>{isEnglish ? (item.weekEn || item.weekUr) : item.weekUr}</Text>
+            <Text style={styles.checkNote}>{'\ud83d\udccc'} {isEnglish ? (item.noteEn || item.noteUr) : item.noteUr}</Text>
           </View>
         </TouchableOpacity>
       );
@@ -134,9 +143,10 @@ const FertilizerChecklist = ({ schedule, checkedIds, onToggle }) => (
 
 // ─── Week Card ───────────────────────────────────────────────────────────────
 
-const WeekCard = ({ week }) => {
+const WeekCard = ({ week, isEnglish }) => {
   const [expanded, setExpanded] = useState(false);
-  const hasFert = week.fertUr && week.fertUr !== '—' && week.fertUr !== 'کوئی نہیں';
+  const fertValue = isEnglish ? (week.fertEn || week.fertUr) : week.fertUr;
+  const hasFert = fertValue && fertValue !== '—' && fertValue !== 'کوئی نہیں' && fertValue !== 'None';
 
   return (
     <TouchableOpacity
@@ -146,30 +156,30 @@ const WeekCard = ({ week }) => {
     >
       <View style={styles.weekHeader}>
         <View style={styles.weekBadge}>
-          <Text style={styles.weekBadgeText}>ہفتہ {week.week}</Text>
+          <Text style={styles.weekBadgeText}>{isEnglish ? `Week ${week.week}` : `ہفتہ ${week.week}`}</Text>
         </View>
-        <Text style={styles.weekTitle}>{week.titleUr}</Text>
+        <Text style={styles.weekTitle}>{isEnglish ? (week.titleEn || week.titleUr) : week.titleUr}</Text>
         <Text style={styles.weekChevron}>{expanded ? '\u25b2' : '\u25bc'}</Text>
       </View>
 
       {expanded && (
         <View style={styles.weekBody}>
           <View style={styles.weekSection}>
-            <Text style={styles.weekSectionTitle}>کام</Text>
-            {week.tasksUr.map((task, i) => (
+            <Text style={styles.weekSectionTitle}>{isEnglish ? 'Tasks' : 'کام'}</Text>
+            {(isEnglish ? (week.tasksEn || week.tasksUr) : week.tasksUr).map((task, i) => (
               <Text key={i} style={styles.weekTask}>{'\u2022'} {task}</Text>
             ))}
           </View>
 
           <View style={styles.weekInfoRow}>
             <View style={styles.weekInfoItem}>
-              <Text style={styles.weekInfoLabel}>پانی</Text>
-              <Text style={styles.weekInfoValue}>{week.waterUr}</Text>
+              <Text style={styles.weekInfoLabel}>{isEnglish ? 'Water' : 'پانی'}</Text>
+              <Text style={styles.weekInfoValue}>{isEnglish ? (week.waterEn || week.waterUr) : week.waterUr}</Text>
             </View>
             <View style={styles.weekInfoItem}>
-              <Text style={styles.weekInfoLabel}>کھاد</Text>
+              <Text style={styles.weekInfoLabel}>{isEnglish ? 'Fertilizer' : 'کھاد'}</Text>
               <Text style={[styles.weekInfoValue, hasFert && styles.weekFertHighlight]}>
-                {week.fertUr}
+                {fertValue}
               </Text>
             </View>
           </View>
@@ -183,6 +193,7 @@ const WeekCard = ({ week }) => {
 
 const AdvisoryScreen = () => {
   const { currentLanguage } = useLanguage();
+  const { colors } = useTheme();
 
   const [activeTab, setActiveTab] = useState('mashwara');
 
@@ -286,7 +297,7 @@ const AdvisoryScreen = () => {
   const skipIrrigation = rainToday || rainTomorrow;
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
       <TabBar activeTab={activeTab} onTabChange={setActiveTab} currentLanguage={currentLanguage} />
 
       {activeTab === 'mashwara' && (
@@ -333,6 +344,7 @@ const AdvisoryScreen = () => {
                   weather={weather}
                   onRefresh={() => handleFetchWeather(district)}
                   loading={weatherLoading}
+                  isEnglish={L}
                 />
               )}
 
@@ -355,6 +367,7 @@ const AdvisoryScreen = () => {
                   weather={weather}
                   onRefresh={() => handleFetchWeather(district)}
                   loading={weatherLoading}
+                  isEnglish={L}
                 />
               )}
 
@@ -380,11 +393,11 @@ const AdvisoryScreen = () => {
                 )}
                 <View style={styles.infoRow}>
                   <Text style={styles.infoLabel}>{L ? 'Interval:' : 'وقفہ:'}</Text>
-                  <Text style={styles.infoValue}>{advisory.waterSchedule.daysUr}</Text>
+                  <Text style={styles.infoValue}>{L ? (advisory.waterSchedule.daysEn || advisory.waterSchedule.daysUr) : advisory.waterSchedule.daysUr}</Text>
                 </View>
                 <View style={styles.infoRow}>
                   <Text style={styles.infoLabel}>{L ? 'Amount:' : 'مقدار:'}</Text>
-                  <Text style={styles.infoValue}>{advisory.waterSchedule.amountUr}</Text>
+                  <Text style={styles.infoValue}>{L ? (advisory.waterSchedule.amountEn || advisory.waterSchedule.amountUr) : advisory.waterSchedule.amountUr}</Text>
                 </View>
                 <View style={styles.tipsBox}>
                   <Text style={styles.tipItem}>{'\u2022'} {L ? 'Water in the morning or evening' : 'صبح سویرے یا شام کو پانی دیں'}</Text>
@@ -400,6 +413,7 @@ const AdvisoryScreen = () => {
                   schedule={advisory.fertilizerSchedule}
                   checkedIds={checkedFerts}
                   onToggle={handleToggleFert}
+                  isEnglish={L}
                 />
               </Card>
 
@@ -445,7 +459,7 @@ const AdvisoryScreen = () => {
                 </Text>
                 <View style={styles.calendarMeta}>
                   <Text style={styles.calendarMetaItem}>
-                    {L ? 'Sowing: ' : 'بوائی: '}{cropCalendar.sowingMonthsUr}
+                    {L ? 'Sowing: ' : 'بوائی: '}{L ? (cropCalendar.sowingMonthsEn || cropCalendar.sowingMonthsUr) : cropCalendar.sowingMonthsUr}
                   </Text>
                   <Text style={styles.calendarMetaItem}>
                     {L ? `Duration: ${cropCalendar.totalWeeks} weeks` : `مدت: ${cropCalendar.totalWeeks} ہفتے`}
@@ -456,7 +470,7 @@ const AdvisoryScreen = () => {
               <Text style={styles.planHint}>{L ? 'Tap any week to expand details' : 'کسی بھی ہفتے پر دبائیں تفصیل دیکھنے کے لیے'}</Text>
 
               {cropCalendar.weeks.map((week, i) => (
-                <WeekCard key={i} week={week} />
+                <WeekCard key={i} week={week} isEnglish={L} />
               ))}
 
               <TouchableOpacity
@@ -491,7 +505,7 @@ const AdvisoryScreen = () => {
       <Picker
         visible={showPlanCropPicker}
         onClose={() => setShowPlanCropPicker(false)}
-        title="فصل منتخب کریں"
+        title={L ? 'Select Crop' : 'فصل منتخب کریں'}
         items={CROP_LIST}
         selectedValue={planCrop}
         onValueChange={(v) => { setPlanCrop(v); setCropCalendar(null); }}
@@ -500,7 +514,7 @@ const AdvisoryScreen = () => {
       <Picker
         visible={showDistrictPicker}
         onClose={() => setShowDistrictPicker(false)}
-        title="ضلع منتخب کریں"
+        title={L ? 'Select District' : 'ضلع منتخب کریں'}
         items={DISTRICT_LIST}
         selectedValue={district}
         onValueChange={(v) => {

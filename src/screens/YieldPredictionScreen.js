@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import {
   COLORS,
   CROP_LIST,
@@ -26,6 +27,7 @@ import Loader from '../components/Loader';
 const YieldPredictionScreen = ({ navigation }) => {
   const { user } = useAuth();
   const { t, currentLanguage } = useLanguage();
+  const { colors } = useTheme();
   
   const [cropType, setCropType] = useState('');
   const [farmArea, setFarmArea] = useState('');
@@ -93,7 +95,7 @@ const YieldPredictionScreen = ({ navigation }) => {
 
   if (result) {
     return (
-      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={styles.content}>
         <Card title={t('yield.result')}>
           <View style={styles.resultCard}>
             <View style={styles.yieldBox}>
@@ -165,7 +167,7 @@ const YieldPredictionScreen = ({ navigation }) => {
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+    <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={styles.content}>
       <Text style={styles.title}>{t('yield.title')}</Text>
 
       <Card>
