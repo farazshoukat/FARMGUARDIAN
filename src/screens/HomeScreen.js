@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { COLORS, CROP_LIST } from '../utils/constants';
 import { getDiseaseHistory, getYieldHistory } from '../utils/storage';
 import Card from '../components/Card';
@@ -17,6 +18,7 @@ import { formatDate } from '../utils/helpers';
 const HomeScreen = ({ navigation }) => {
   const { user } = useAuth();
   const { t, currentLanguage } = useLanguage();
+  const { colors } = useTheme();
   const [recentActivity, setRecentActivity] = useState([]);
 
   useEffect(() => {
@@ -69,16 +71,16 @@ const HomeScreen = ({ navigation }) => {
       onPress: () => navigation.navigate('Advisory'),
     },
     {
-      id: 'map',
-      title: t('home.viewMap'),
-      icon: '🗺️',
+      id: 'mandi',
+      title: t('home.mandiPrices'),
+      icon: '🏪',
       color: COLORS.warning,
-      onPress: () => navigation.navigate('Map'),
+      onPress: () => navigation.navigate('MandiPrices'),
     },
   ];
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
     <View style={styles.content}>
       <View style={styles.header}>
         <View>

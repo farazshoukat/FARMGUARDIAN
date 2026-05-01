@@ -1,74 +1,74 @@
-{
+﻿{
   "smartMashwara": {
     "maize": {
       "waterSchedule": {
-        "dark_brown": { "daysUr": "ہر 6-7 دن", "amountUr": "2-3 انچ پانی" },
-        "light_brown": { "daysUr": "ہر 5-6 دن", "amountUr": "2-3 انچ پانی" },
-        "red": { "daysUr": "ہر 4-5 دن", "amountUr": "2 انچ پانی" },
-        "black": { "daysUr": "ہر 7-8 دن", "amountUr": "2 انچ پانی" },
-        "gray": { "daysUr": "ہر 5-6 دن", "amountUr": "2-3 انچ پانی" }
+        "dark_brown": { "daysUr": "ہر 6-7 دن", "amountUr": "2-3 انچ پانی", "daysEn": "Every 6-7 days", "amountEn": "2-3 inches of water" },
+        "light_brown": { "daysUr": "ہر 5-6 دن", "amountUr": "2-3 انچ پانی", "daysEn": "Every 5-6 days", "amountEn": "2-3 inches of water" },
+        "red": { "daysUr": "ہر 4-5 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 4-5 days", "amountEn": "2 inches of water" },
+        "black": { "daysUr": "ہر 7-8 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 7-8 days", "amountEn": "2 inches of water" },
+        "gray": { "daysUr": "ہر 5-6 دن", "amountUr": "2-3 انچ پانی", "daysEn": "Every 5-6 days", "amountEn": "2-3 inches of water" }
       },
       "fertilizerSchedule": [
-        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو فی ایکڑ", "noteUr": "بوائی سے پہلے مٹی میں ملائیں" },
-        { "id": "f2", "weekUr": "4-5 ہفتے بعد", "fertUr": "یوریا — 50 کلو فی ایکڑ", "noteUr": "پانی دینے کے فوری بعد ڈالیں" },
-        { "id": "f3", "weekUr": "8-9 ہفتے بعد", "fertUr": "یوریا — 25 کلو فی ایکڑ", "noteUr": "پھول آنے سے پہلے" }
+        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو فی ایکڑ", "noteUr": "بوائی سے پہلے مٹی میں ملائیں", "weekEn": "At sowing", "fertEn": "DAP — 50 kg/acre", "noteEn": "Mix into soil before sowing" },
+        { "id": "f2", "weekUr": "4-5 ہفتے بعد", "fertUr": "یوریا — 50 کلو فی ایکڑ", "noteUr": "پانی دینے کے فوری بعد ڈالیں", "weekEn": "After 4-5 weeks", "fertEn": "Urea — 50 kg/acre", "noteEn": "Apply immediately after irrigation" },
+        { "id": "f3", "weekUr": "8-9 ہفتے بعد", "fertUr": "یوریا — 25 کلو فی ایکڑ", "noteUr": "پھول آنے سے پہلے", "weekEn": "After 8-9 weeks", "fertEn": "Urea — 25 kg/acre", "noteEn": "Before flowering" }
       ]
     },
     "wheat": {
       "waterSchedule": {
-        "dark_brown": { "daysUr": "ہر 10-12 دن", "amountUr": "3-4 انچ پانی" },
-        "light_brown": { "daysUr": "ہر 8-10 دن", "amountUr": "3 انچ پانی" },
-        "red": { "daysUr": "ہر 7-8 دن", "amountUr": "2-3 انچ پانی" },
-        "black": { "daysUr": "ہر 12-14 دن", "amountUr": "3 انچ پانی" },
-        "gray": { "daysUr": "ہر 8-10 دن", "amountUr": "3 انچ پانی" }
+        "dark_brown": { "daysUr": "ہر 10-12 دن", "amountUr": "3-4 انچ پانی", "daysEn": "Every 10-12 days", "amountEn": "3-4 inches of water" },
+        "light_brown": { "daysUr": "ہر 8-10 دن", "amountUr": "3 انچ پانی", "daysEn": "Every 8-10 days", "amountEn": "3 inches of water" },
+        "red": { "daysUr": "ہر 7-8 دن", "amountUr": "2-3 انچ پانی", "daysEn": "Every 7-8 days", "amountEn": "2-3 inches of water" },
+        "black": { "daysUr": "ہر 12-14 دن", "amountUr": "3 انچ پانی", "daysEn": "Every 12-14 days", "amountEn": "3 inches of water" },
+        "gray": { "daysUr": "ہر 8-10 دن", "amountUr": "3 انچ پانی", "daysEn": "Every 8-10 days", "amountEn": "3 inches of water" }
       },
       "fertilizerSchedule": [
-        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو فی ایکڑ", "noteUr": "بوائی سے پہلے مٹی میں ملائیں" },
-        { "id": "f2", "weekUr": "3-4 ہفتے بعد (اگاؤ)", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "پانی دینے کے بعد" },
-        { "id": "f3", "weekUr": "8-9 ہفتے بعد (تلے)", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "پانی دینے کے بعد" }
+        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو فی ایکڑ", "noteUr": "بوائی سے پہلے مٹی میں ملائیں", "weekEn": "At sowing", "fertEn": "DAP — 50 kg/acre", "noteEn": "Mix into soil before sowing" },
+        { "id": "f2", "weekUr": "3-4 ہفتے بعد (اگاؤ)", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "پانی دینے کے بعد", "weekEn": "After 3-4 weeks (germination)", "fertEn": "Urea — 40 kg/acre", "noteEn": "After irrigation" },
+        { "id": "f3", "weekUr": "8-9 ہفتے بعد (تلے)", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "پانی دینے کے بعد", "weekEn": "After 8-9 weeks (tillering)", "fertEn": "Urea — 40 kg/acre", "noteEn": "After irrigation" }
       ]
     },
     "rice": {
       "waterSchedule": {
-        "dark_brown": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-6 انچ پانی" },
-        "light_brown": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-6 انچ پانی" },
-        "red": { "daysUr": "ہر 2-3 دن", "amountUr": "3-4 انچ پانی" },
-        "black": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-5 انچ پانی" },
-        "gray": { "daysUr": "ہر 3-4 دن", "amountUr": "3-4 انچ پانی" }
+        "dark_brown": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-6 انچ پانی", "daysEn": "Continuous standing water", "amountEn": "4-6 inches of water" },
+        "light_brown": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-6 انچ پانی", "daysEn": "Continuous standing water", "amountEn": "4-6 inches of water" },
+        "red": { "daysUr": "ہر 2-3 دن", "amountUr": "3-4 انچ پانی", "daysEn": "Every 2-3 days", "amountEn": "3-4 inches of water" },
+        "black": { "daysUr": "مستقل کھڑا پانی", "amountUr": "4-5 انچ پانی", "daysEn": "Continuous standing water", "amountEn": "4-5 inches of water" },
+        "gray": { "daysUr": "ہر 3-4 دن", "amountUr": "3-4 انچ پانی", "daysEn": "Every 3-4 days", "amountEn": "3-4 inches of water" }
       },
       "fertilizerSchedule": [
-        { "id": "f1", "weekUr": "پنیری لگانے کے وقت", "fertUr": "DAP — 40 کلو فی ایکڑ", "noteUr": "کھیت میں ملائیں" },
-        { "id": "f2", "weekUr": "3 ہفتے بعد", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "کھڑے پانی میں ڈالیں" },
-        { "id": "f3", "weekUr": "6-7 ہفتے بعد", "fertUr": "یوریا — 30 کلو فی ایکڑ", "noteUr": "بالی نکلنے سے پہلے" }
+        { "id": "f1", "weekUr": "پنیری لگانے کے وقت", "fertUr": "DAP — 40 کلو فی ایکڑ", "noteUr": "کھیت میں ملائیں", "weekEn": "At transplanting", "fertEn": "DAP — 40 kg/acre", "noteEn": "Mix into the field" },
+        { "id": "f2", "weekUr": "3 ہفتے بعد", "fertUr": "یوریا — 40 کلو فی ایکڑ", "noteUr": "کھڑے پانی میں ڈالیں", "weekEn": "After 3 weeks", "fertEn": "Urea — 40 kg/acre", "noteEn": "Apply into standing water" },
+        { "id": "f3", "weekUr": "6-7 ہفتے بعد", "fertUr": "یوریا — 30 کلو فی ایکڑ", "noteUr": "بالی نکلنے سے پہلے", "weekEn": "After 6-7 weeks", "fertEn": "Urea — 30 kg/acre", "noteEn": "Before panicle emergence" }
       ]
     },
     "potato": {
       "waterSchedule": {
-        "dark_brown": { "daysUr": "ہر 7-8 دن", "amountUr": "2-3 انچ پانی" },
-        "light_brown": { "daysUr": "ہر 5-7 دن", "amountUr": "2 انچ پانی" },
-        "red": { "daysUr": "ہر 5-6 دن", "amountUr": "2 انچ پانی" },
-        "black": { "daysUr": "ہر 8-10 دن", "amountUr": "2 انچ پانی" },
-        "gray": { "daysUr": "ہر 6-7 دن", "amountUr": "2 انچ پانی" }
+        "dark_brown": { "daysUr": "ہر 7-8 دن", "amountUr": "2-3 انچ پانی", "daysEn": "Every 7-8 days", "amountEn": "2-3 inches of water" },
+        "light_brown": { "daysUr": "ہر 5-7 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 5-7 days", "amountEn": "2 inches of water" },
+        "red": { "daysUr": "ہر 5-6 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 5-6 days", "amountEn": "2 inches of water" },
+        "black": { "daysUr": "ہر 8-10 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 8-10 days", "amountEn": "2 inches of water" },
+        "gray": { "daysUr": "ہر 6-7 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 6-7 days", "amountEn": "2 inches of water" }
       },
       "fertilizerSchedule": [
-        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو + پوٹاش 25 کلو فی ایکڑ", "noteUr": "مٹی میں ملائیں" },
-        { "id": "f2", "weekUr": "4-5 ہفتے بعد", "fertUr": "یوریا — 35 کلو فی ایکڑ", "noteUr": "مٹی چڑھانے کے وقت" },
-        { "id": "f3", "weekUr": "8 ہفتے بعد", "fertUr": "پوٹاش — 25 کلو فی ایکڑ", "noteUr": "کند بنتے وقت" }
+        { "id": "f1", "weekUr": "بوائی کے وقت", "fertUr": "DAP — 50 کلو + پوٹاش 25 کلو فی ایکڑ", "noteUr": "مٹی میں ملائیں", "weekEn": "At sowing", "fertEn": "DAP — 50 kg + Potash 25 kg/acre", "noteEn": "Mix into the soil" },
+        { "id": "f2", "weekUr": "4-5 ہفتے بعد", "fertUr": "یوریا — 35 کلو فی ایکڑ", "noteUr": "مٹی چڑھانے کے وقت", "weekEn": "After 4-5 weeks", "fertEn": "Urea — 35 kg/acre", "noteEn": "At earthing-up time" },
+        { "id": "f3", "weekUr": "8 ہفتے بعد", "fertUr": "پوٹاش — 25 کلو فی ایکڑ", "noteUr": "کند بنتے وقت", "weekEn": "After 8 weeks", "fertEn": "Potash — 25 kg/acre", "noteEn": "During tuber formation" }
       ]
     },
     "tomato": {
       "waterSchedule": {
-        "dark_brown": { "daysUr": "ہر 5-6 دن", "amountUr": "2 انچ پانی" },
-        "light_brown": { "daysUr": "ہر 4-5 دن", "amountUr": "1.5-2 انچ پانی" },
-        "red": { "daysUr": "ہر 3-4 دن", "amountUr": "1.5 انچ پانی" },
-        "black": { "daysUr": "ہر 6-7 دن", "amountUr": "2 انچ پانی" },
-        "gray": { "daysUr": "ہر 4-5 دن", "amountUr": "2 انچ پانی" }
+        "dark_brown": { "daysUr": "ہر 5-6 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 5-6 days", "amountEn": "2 inches of water" },
+        "light_brown": { "daysUr": "ہر 4-5 دن", "amountUr": "1.5-2 انچ پانی", "daysEn": "Every 4-5 days", "amountEn": "1.5-2 inches of water" },
+        "red": { "daysUr": "ہر 3-4 دن", "amountUr": "1.5 انچ پانی", "daysEn": "Every 3-4 days", "amountEn": "1.5 inches of water" },
+        "black": { "daysUr": "ہر 6-7 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 6-7 days", "amountEn": "2 inches of water" },
+        "gray": { "daysUr": "ہر 4-5 دن", "amountUr": "2 انچ پانی", "daysEn": "Every 4-5 days", "amountEn": "2 inches of water" }
       },
       "fertilizerSchedule": [
-        { "id": "f1", "weekUr": "پنیری لگانے کے وقت", "fertUr": "DAP — 40 کلو فی ایکڑ", "noteUr": "مٹی میں ملائیں" },
-        { "id": "f2", "weekUr": "3-4 ہفتے بعد", "fertUr": "یوریا — 25 کلو فی ایکڑ", "noteUr": "پانی کے ساتھ" },
-        { "id": "f3", "weekUr": "6-7 ہفتے بعد (پھول)", "fertUr": "پوٹاش — 25 کلو فی ایکڑ", "noteUr": "پھل بننے کے لیے" },
-        { "id": "f4", "weekUr": "10 ہفتے بعد", "fertUr": "یوریا — 20 کلو فی ایکڑ", "noteUr": "پھل کی پختگی کے لیے" }
+        { "id": "f1", "weekUr": "پنیری لگانے کے وقت", "fertUr": "DAP — 40 کلو فی ایکڑ", "noteUr": "مٹی میں ملائیں", "weekEn": "At transplanting", "fertEn": "DAP — 40 kg/acre", "noteEn": "Mix into the soil" },
+        { "id": "f2", "weekUr": "3-4 ہفتے بعد", "fertUr": "یوریا — 25 کلو فی ایکڑ", "noteUr": "پانی کے ساتھ", "weekEn": "After 3-4 weeks", "fertEn": "Urea — 25 kg/acre", "noteEn": "With irrigation" },
+        { "id": "f3", "weekUr": "6-7 ہفتے بعد (پھول)", "fertUr": "پوٹاش — 25 کلو فی ایکڑ", "noteUr": "پھل بننے کے لیے", "weekEn": "After 6-7 weeks (flowering)", "fertEn": "Potash — 25 kg/acre", "noteEn": "For fruit set" },
+        { "id": "f4", "weekUr": "10 ہفتے بعد", "fertUr": "یوریا — 20 کلو فی ایکڑ", "noteUr": "پھل کی پختگی کے لیے", "weekEn": "After 10 weeks", "fertEn": "Urea — 20 kg/acre", "noteEn": "For fruit ripening" }
       ]
     }
   },
@@ -76,442 +76,74 @@
     "maize": {
       "totalWeeks": 14,
       "sowingMonthsUr": "اپریل — جون (خریف)",
+      "sowingMonthsEn": "April — June (Kharif)",
       "weeks": [
-        {
-          "week": "1",
-          "titleUr": "بوائی",
-          "tasksUr": [
-            "زمین تیار کریں — 2-3 بار ہل چلائیں",
-            "DAP 50 کلو فی ایکڑ مٹی میں ملائیں",
-            "بیج 25-30 کلو فی ایکڑ بوئیں",
-            "قطار سے قطار 2.5 فٹ، بوٹا سے بوٹا 1 فٹ"
-          ],
-          "waterUr": "بوائی کے فوری بعد پانی دیں",
-          "fertUr": "DAP 50 کلو فی ایکڑ"
-        },
-        {
-          "week": "2-3",
-          "titleUr": "اگاؤ",
-          "tasksUr": [
-            "پودے نکلنے کی جانچ کریں",
-            "خالی جگہوں پر دوبارہ بیج ڈالیں",
-            "جڑی بوٹیاں ہاتھ سے نکالیں"
-          ],
-          "waterUr": "ہر 5-6 دن، ہلکا پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "4-5",
-          "titleUr": "نشوونما",
-          "tasksUr": [
-            "پہلی گوڈی کریں",
-            "یوریا 50 کلو فی ایکڑ ڈالیں",
-            "کیڑوں کا معائنہ کریں"
-          ],
-          "waterUr": "ہر 6-7 دن پانی",
-          "fertUr": "یوریا 50 کلو فی ایکڑ"
-        },
-        {
-          "week": "6-7",
-          "titleUr": "تیز بڑھوتری",
-          "tasksUr": [
-            "دوسری گوڈی کریں",
-            "مٹی اوپر چڑھائیں",
-            "آرمی ورم کا خیال رکھیں"
-          ],
-          "waterUr": "ہر 6-7 دن پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "8-9",
-          "titleUr": "پھول آنا",
-          "tasksUr": [
-            "یوریا 25 کلو فی ایکڑ ڈالیں",
-            "آبپاشی باقاعدہ رکھیں",
-            "پھپھوندی کے لیے اسپرے کریں"
-          ],
-          "waterUr": "ہر 5-6 دن — پانی نہ روکیں",
-          "fertUr": "یوریا 25 کلو فی ایکڑ"
-        },
-        {
-          "week": "10-11",
-          "titleUr": "دانہ بھرنا",
-          "tasksUr": [
-            "کیڑوں کا معائنہ جاری رکھیں",
-            "اگر پتے پیلے ہوں تو پوٹاش ڈالیں"
-          ],
-          "waterUr": "ہر 7 دن پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "12-13",
-          "titleUr": "پختگی",
-          "tasksUr": [
-            "پانی کم کرنا شروع کریں",
-            "فصل پکنے کی علامات دیکھیں",
-            "بھٹے خشک ہونے لگتے ہیں"
-          ],
-          "waterUr": "ہر 10 دن — کم پانی",
-          "fertUr": "کوئی نہیں"
-        },
-        {
-          "week": "14",
-          "titleUr": "کٹائی",
-          "tasksUr": [
-            "بھٹے توڑیں جب پتے سوکھ جائیں",
-            "دانے خشک کریں — نمی 14% سے کم",
-            "اگلی فصل کے لیے بیج الگ رکھیں"
-          ],
-          "waterUr": "پانی بند کریں",
-          "fertUr": "کوئی نہیں"
-        }
+        { "week": "1", "titleUr": "بوائی", "titleEn": "Sowing", "tasksUr": ["زمین تیار کریں — 2-3 بار ہل چلائیں","DAP 50 کلو فی ایکڑ مٹی میں ملائیں","بیج 25-30 کلو فی ایکڑ بوئیں","قطار سے قطار 2.5 فٹ، بوٹا سے بوٹا 1 فٹ"], "tasksEn": ["Prepare land — plow 2-3 times","Mix DAP 50 kg/acre into soil","Sow seed 25-30 kg/acre","Row spacing 2.5 ft, plant spacing 1 ft"], "waterUr": "بوائی کے فوری بعد پانی دیں", "waterEn": "Irrigate immediately after sowing", "fertUr": "DAP 50 کلو فی ایکڑ", "fertEn": "DAP 50 kg/acre" },
+        { "week": "2-3", "titleUr": "اگاؤ", "titleEn": "Germination", "tasksUr": ["پودے نکلنے کی جانچ کریں","خالی جگہوں پر دوبارہ بیج ڈالیں","جڑی بوٹیاں ہاتھ سے نکالیں"], "tasksEn": ["Check seedling emergence","Re-sow in gaps","Remove weeds by hand"], "waterUr": "ہر 5-6 دن، ہلکا پانی", "waterEn": "Every 5-6 days, light irrigation", "fertUr": "—", "fertEn": "—" },
+        { "week": "4-5", "titleUr": "نشوونما", "titleEn": "Vegetative Growth", "tasksUr": ["پہلی گوڈی کریں","یوریا 50 کلو فی ایکڑ ڈالیں","کیڑوں کا معائنہ کریں"], "tasksEn": ["First hoeing","Apply Urea 50 kg/acre","Inspect for pests"], "waterUr": "ہر 6-7 دن پانی", "waterEn": "Every 6-7 days", "fertUr": "یوریا 50 کلو فی ایکڑ", "fertEn": "Urea 50 kg/acre" },
+        { "week": "6-7", "titleUr": "تیز بڑھوتری", "titleEn": "Rapid Growth", "tasksUr": ["دوسری گوڈی کریں","مٹی اوپر چڑھائیں","آرمی ورم کا خیال رکھیں"], "tasksEn": ["Second hoeing","Earth up the soil","Watch for army worm"], "waterUr": "ہر 6-7 دن پانی", "waterEn": "Every 6-7 days", "fertUr": "—", "fertEn": "—" },
+        { "week": "8-9", "titleUr": "پھول آنا", "titleEn": "Flowering", "tasksUr": ["یوریا 25 کلو فی ایکڑ ڈالیں","آبپاشی باقاعدہ رکھیں","پھپھوندی کے لیے اسپرے کریں"], "tasksEn": ["Apply Urea 25 kg/acre","Maintain regular irrigation","Spray for fungal disease"], "waterUr": "ہر 5-6 دن — پانی نہ روکیں", "waterEn": "Every 5-6 days — do not stop", "fertUr": "یوریا 25 کلو فی ایکڑ", "fertEn": "Urea 25 kg/acre" },
+        { "week": "10-11", "titleUr": "دانہ بھرنا", "titleEn": "Grain Filling", "tasksUr": ["کیڑوں کا معائنہ جاری رکھیں","اگر پتے پیلے ہوں تو پوٹاش ڈالیں"], "tasksEn": ["Continue pest monitoring","Apply Potash if leaves turn yellow"], "waterUr": "ہر 7 دن پانی", "waterEn": "Every 7 days", "fertUr": "—", "fertEn": "—" },
+        { "week": "12-13", "titleUr": "پختگی", "titleEn": "Maturity", "tasksUr": ["پانی کم کرنا شروع کریں","فصل پکنے کی علامات دیکھیں","بھٹے خشک ہونے لگتے ہیں"], "tasksEn": ["Start reducing irrigation","Watch for ripening signs","Cobs start to dry"], "waterUr": "ہر 10 دن — کم پانی", "waterEn": "Every 10 days — reduce water", "fertUr": "کوئی نہیں", "fertEn": "None" },
+        { "week": "14", "titleUr": "کٹائی", "titleEn": "Harvest", "tasksUr": ["بھٹے توڑیں جب پتے سوکھ جائیں","دانے خشک کریں — نمی 14% سے کم","اگلی فصل کے لیے بیج الگ رکھیں"], "tasksEn": ["Pick cobs when leaves are dry","Dry grain — moisture below 14%","Set aside seed for next crop"], "waterUr": "پانی بند کریں", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" }
       ]
     },
     "wheat": {
       "totalWeeks": 20,
       "sowingMonthsUr": "نومبر — دسمبر (ربیع)",
+      "sowingMonthsEn": "November — December (Rabi)",
       "weeks": [
-        {
-          "week": "1",
-          "titleUr": "بوائی",
-          "tasksUr": [
-            "زمین 2-3 بار ہل چلا کر تیار کریں",
-            "DAP 50 کلو فی ایکڑ مٹی میں ملائیں",
-            "بیج 45-50 کلو فی ایکڑ ڈرل سے بوئیں"
-          ],
-          "waterUr": "بوائی کے بعد فوری پانی (ونی)",
-          "fertUr": "DAP 50 کلو فی ایکڑ"
-        },
-        {
-          "week": "2-3",
-          "titleUr": "اگاؤ",
-          "tasksUr": [
-            "پودے چیک کریں",
-            "یکساں اگاؤ نہ ہو تو دوبارہ بیج ڈالیں"
-          ],
-          "waterUr": "پانی نہیں (مٹی میں نمی کافی)",
-          "fertUr": "—"
-        },
-        {
-          "week": "4-5",
-          "titleUr": "کانیاں نکلنا",
-          "tasksUr": [
-            "پہلا پانی (نوبت) دیں",
-            "یوریا 40 کلو فی ایکڑ ڈالیں",
-            "جڑی بوٹیاں ختم کریں (ہربیسائیڈ یا ہاتھ سے)"
-          ],
-          "waterUr": "پہلا پانی — 3-4 انچ",
-          "fertUr": "یوریا 40 کلو فی ایکڑ"
-        },
-        {
-          "week": "7-8",
-          "titleUr": "گنڈھیاں بننا",
-          "tasksUr": [
-            "دوسرا پانی دیں",
-            "زنگ اور ملڈیو کا معائنہ کریں"
-          ],
-          "waterUr": "دوسرا پانی — 3-4 انچ",
-          "fertUr": "—"
-        },
-        {
-          "week": "9-10",
-          "titleUr": "تنے کا اگنا",
-          "tasksUr": [
-            "یوریا 40 کلو فی ایکڑ ڈالیں",
-            "تیسرا پانی دیں",
-            "پیلے زنگ کا اسپرے کریں اگر نظر آئے"
-          ],
-          "waterUr": "تیسرا پانی — 3 انچ",
-          "fertUr": "یوریا 40 کلو فی ایکڑ"
-        },
-        {
-          "week": "12-13",
-          "titleUr": "بالی نکلنا",
-          "tasksUr": [
-            "چوتھا پانی دیں",
-            "افیڈ اور تلا کا معائنہ کریں",
-            "اگر کیڑے ہوں تو اسپرے کریں"
-          ],
-          "waterUr": "چوتھا پانی — اہم",
-          "fertUr": "—"
-        },
-        {
-          "week": "15-16",
-          "titleUr": "دانہ بھرنا",
-          "tasksUr": [
-            "پانچواں پانی دیں",
-            "دانہ بھرنے کا مرحلہ — پانی نہ روکیں"
-          ],
-          "waterUr": "پانچواں پانی — 2-3 انچ",
-          "fertUr": "—"
-        },
-        {
-          "week": "18-19",
-          "titleUr": "پختگی",
-          "tasksUr": [
-            "پانی بند کریں",
-            "فصل سنہری ہو رہی ہے",
-            "کٹائی کی تیاری کریں"
-          ],
-          "waterUr": "پانی بند",
-          "fertUr": "کوئی نہیں"
-        },
-        {
-          "week": "20",
-          "titleUr": "کٹائی",
-          "tasksUr": [
-            "گہائی کریں",
-            "دانے خشک کریں — نمی 12% سے کم",
-            "بیج محفوظ رکھیں"
-          ],
-          "waterUr": "پانی بند",
-          "fertUr": "کوئی نہیں"
-        }
+        { "week": "1", "titleUr": "بوائی", "titleEn": "Sowing", "tasksUr": ["زمین 2-3 بار ہل چلا کر تیار کریں","DAP 50 کلو فی ایکڑ مٹی میں ملائیں","بیج 45-50 کلو فی ایکڑ ڈرل سے بوئیں"], "tasksEn": ["Prepare land by plowing 2-3 times","Mix DAP 50 kg/acre into soil","Drill sow seed 45-50 kg/acre"], "waterUr": "بوائی کے بعد فوری پانی (ونی)", "waterEn": "Irrigate immediately after sowing", "fertUr": "DAP 50 کلو فی ایکڑ", "fertEn": "DAP 50 kg/acre" },
+        { "week": "2-3", "titleUr": "اگاؤ", "titleEn": "Germination", "tasksUr": ["پودے چیک کریں","یکساں اگاؤ نہ ہو تو دوبارہ بیج ڈالیں"], "tasksEn": ["Check plant emergence","Re-sow if germination is uneven"], "waterUr": "پانی نہیں (مٹی میں نمی کافی)", "waterEn": "No irrigation (soil moisture sufficient)", "fertUr": "—", "fertEn": "—" },
+        { "week": "4-5", "titleUr": "کانیاں نکلنا", "titleEn": "Tillering", "tasksUr": ["پہلا پانی (نوبت) دیں","یوریا 40 کلو فی ایکڑ ڈالیں","جڑی بوٹیاں ختم کریں (ہربیسائیڈ یا ہاتھ سے)"], "tasksEn": ["First irrigation","Apply Urea 40 kg/acre","Control weeds (herbicide or manual)"], "waterUr": "پہلا پانی — 3-4 انچ", "waterEn": "First irrigation — 3-4 inches", "fertUr": "یوریا 40 کلو فی ایکڑ", "fertEn": "Urea 40 kg/acre" },
+        { "week": "7-8", "titleUr": "گنڈھیاں بننا", "titleEn": "Jointing", "tasksUr": ["دوسرا پانی دیں","زنگ اور ملڈیو کا معائنہ کریں"], "tasksEn": ["Second irrigation","Inspect for rust and mildew"], "waterUr": "دوسرا پانی — 3-4 انچ", "waterEn": "Second irrigation — 3-4 inches", "fertUr": "—", "fertEn": "—" },
+        { "week": "9-10", "titleUr": "تنے کا اگنا", "titleEn": "Stem Extension", "tasksUr": ["یوریا 40 کلو فی ایکڑ ڈالیں","تیسرا پانی دیں","پیلے زنگ کا اسپرے کریں اگر نظر آئے"], "tasksEn": ["Apply Urea 40 kg/acre","Third irrigation","Spray for yellow rust if detected"], "waterUr": "تیسرا پانی — 3 انچ", "waterEn": "Third irrigation — 3 inches", "fertUr": "یوریا 40 کلو فی ایکڑ", "fertEn": "Urea 40 kg/acre" },
+        { "week": "12-13", "titleUr": "بالی نکلنا", "titleEn": "Heading", "tasksUr": ["چوتھا پانی دیں","افیڈ اور تلا کا معائنہ کریں","اگر کیڑے ہوں تو اسپرے کریں"], "tasksEn": ["Fourth irrigation","Inspect for aphids and thrips","Spray if pests are found"], "waterUr": "چوتھا پانی — اہم", "waterEn": "Fourth irrigation — critical stage", "fertUr": "—", "fertEn": "—" },
+        { "week": "15-16", "titleUr": "دانہ بھرنا", "titleEn": "Grain Filling", "tasksUr": ["پانچواں پانی دیں","دانہ بھرنے کا مرحلہ — پانی نہ روکیں"], "tasksEn": ["Fifth irrigation","Grain filling stage — do not stop irrigation"], "waterUr": "پانچواں پانی — 2-3 انچ", "waterEn": "Fifth irrigation — 2-3 inches", "fertUr": "—", "fertEn": "—" },
+        { "week": "18-19", "titleUr": "پختگی", "titleEn": "Maturity", "tasksUr": ["پانی بند کریں","فصل سنہری ہو رہی ہے","کٹائی کی تیاری کریں"], "tasksEn": ["Stop irrigation","Crop is turning golden","Prepare for harvest"], "waterUr": "پانی بند", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" },
+        { "week": "20", "titleUr": "کٹائی", "titleEn": "Harvest", "tasksUr": ["گہائی کریں","دانے خشک کریں — نمی 12% سے کم","بیج محفوظ رکھیں"], "tasksEn": ["Thresh the crop","Dry grain — moisture below 12%","Store seed safely"], "waterUr": "پانی بند", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" }
       ]
     },
     "rice": {
       "totalWeeks": 20,
       "sowingMonthsUr": "جون — جولائی (خریف)",
+      "sowingMonthsEn": "June — July (Kharif)",
       "weeks": [
-        {
-          "week": "1-2",
-          "titleUr": "نرسری",
-          "tasksUr": [
-            "نرسری میں بیج بوئیں — 8-10 کلو فی ایکڑ",
-            "پانی کھڑا رکھیں — 2 انچ",
-            "DAP 10 کلو نرسری میں ڈالیں"
-          ],
-          "waterUr": "مستقل کھڑا پانی",
-          "fertUr": "DAP 10 کلو نرسری میں"
-        },
-        {
-          "week": "3-4",
-          "titleUr": "کھیت تیار کرنا",
-          "tasksUr": [
-            "کھیت کو سطح کریں (لیولنگ)",
-            "DAP 40 کلو فی ایکڑ ملائیں",
-            "کھیت میں پانی بھریں"
-          ],
-          "waterUr": "کھیت میں 4-6 انچ پانی",
-          "fertUr": "DAP 40 کلو فی ایکڑ"
-        },
-        {
-          "week": "4-5",
-          "titleUr": "پنیری لگانا",
-          "tasksUr": [
-            "25-30 دن کی پنیری لگائیں",
-            "قطار سے قطار 8 انچ، بوٹا سے بوٹا 6 انچ",
-            "لگانے کے بعد پانی یقینی کریں"
-          ],
-          "waterUr": "مستقل کھڑا پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "6-7",
-          "titleUr": "کانیاں نکلنا",
-          "tasksUr": [
-            "یوریا 40 کلو فی ایکڑ ڈالیں",
-            "جڑی بوٹیاں ہٹائیں",
-            "بیماریوں کا معائنہ کریں"
-          ],
-          "waterUr": "4-6 انچ کھڑا پانی",
-          "fertUr": "یوریا 40 کلو فی ایکڑ"
-        },
-        {
-          "week": "9-10",
-          "titleUr": "تیز بڑھوتری",
-          "tasksUr": [
-            "یوریا 30 کلو فی ایکڑ ڈالیں",
-            "بلاسٹ اور پتی کا جھلساؤ دیکھیں"
-          ],
-          "waterUr": "4-5 انچ کھڑا پانی",
-          "fertUr": "یوریا 30 کلو فی ایکڑ"
-        },
-        {
-          "week": "13-14",
-          "titleUr": "بالی نکلنا",
-          "tasksUr": [
-            "پانی کا خیال رکھیں — اہم مرحلہ",
-            "بالی نکلنے پر اسپرے بند کریں"
-          ],
-          "waterUr": "مستقل پانی — نہ روکیں",
-          "fertUr": "—"
-        },
-        {
-          "week": "17-18",
-          "titleUr": "پختگی",
-          "tasksUr": [
-            "پانی کم کریں",
-            "دانے پکنے کی علامات دیکھیں",
-            "کٹائی کی تیاری"
-          ],
-          "waterUr": "پانی بند — 2 ہفتے پہلے",
-          "fertUr": "کوئی نہیں"
-        },
-        {
-          "week": "19-20",
-          "titleUr": "کٹائی",
-          "tasksUr": [
-            "80% دانے پک جائیں تو کاٹیں",
-            "گہائی کریں",
-            "نمی 14% سے کم کریں"
-          ],
-          "waterUr": "پانی بند",
-          "fertUr": "کوئی نہیں"
-        }
+        { "week": "1-2", "titleUr": "نرسری", "titleEn": "Nursery", "tasksUr": ["نرسری میں بیج بوئیں — 8-10 کلو فی ایکڑ","پانی کھڑا رکھیں — 2 انچ","DAP 10 کلو نرسری میں ڈالیں"], "tasksEn": ["Sow seed in nursery — 8-10 kg/acre","Keep standing water — 2 inches","Apply DAP 10 kg in nursery"], "waterUr": "مستقل کھڑا پانی", "waterEn": "Continuous standing water", "fertUr": "DAP 10 کلو نرسری میں", "fertEn": "DAP 10 kg in nursery" },
+        { "week": "3-4", "titleUr": "کھیت تیار کرنا", "titleEn": "Field Preparation", "tasksUr": ["کھیت کو سطح کریں (لیولنگ)","DAP 40 کلو فی ایکڑ ملائیں","کھیت میں پانی بھریں"], "tasksEn": ["Level the field","Mix DAP 40 kg/acre","Flood the field with water"], "waterUr": "کھیت میں 4-6 انچ پانی", "waterEn": "4-6 inches of water in field", "fertUr": "DAP 40 کلو فی ایکڑ", "fertEn": "DAP 40 kg/acre" },
+        { "week": "4-5", "titleUr": "پنیری لگانا", "titleEn": "Transplanting", "tasksUr": ["25-30 دن کی پنیری لگائیں","قطار سے قطار 8 انچ، بوٹا سے بوٹا 6 انچ","لگانے کے بعد پانی یقینی کریں"], "tasksEn": ["Transplant 25-30 day seedlings","Row spacing 8 inches, plant spacing 6 inches","Ensure water after transplanting"], "waterUr": "مستقل کھڑا پانی", "waterEn": "Continuous standing water", "fertUr": "—", "fertEn": "—" },
+        { "week": "6-7", "titleUr": "کانیاں نکلنا", "titleEn": "Tillering", "tasksUr": ["یوریا 40 کلو فی ایکڑ ڈالیں","جڑی بوٹیاں ہٹائیں","بیماریوں کا معائنہ کریں"], "tasksEn": ["Apply Urea 40 kg/acre","Remove weeds","Inspect for diseases"], "waterUr": "4-6 انچ کھڑا پانی", "waterEn": "4-6 inches standing water", "fertUr": "یوریا 40 کلو فی ایکڑ", "fertEn": "Urea 40 kg/acre" },
+        { "week": "9-10", "titleUr": "تیز بڑھوتری", "titleEn": "Rapid Growth", "tasksUr": ["یوریا 30 کلو فی ایکڑ ڈالیں","بلاسٹ اور پتی کا جھلساؤ دیکھیں"], "tasksEn": ["Apply Urea 30 kg/acre","Watch for blast and leaf blight"], "waterUr": "4-5 انچ کھڑا پانی", "waterEn": "4-5 inches standing water", "fertUr": "یوریا 30 کلو فی ایکڑ", "fertEn": "Urea 30 kg/acre" },
+        { "week": "13-14", "titleUr": "بالی نکلنا", "titleEn": "Panicle Initiation", "tasksUr": ["پانی کا خیال رکھیں — اہم مرحلہ","بالی نکلنے پر اسپرے بند کریں"], "tasksEn": ["Maintain water — critical stage","Stop spraying at panicle emergence"], "waterUr": "مستقل پانی — نہ روکیں", "waterEn": "Continuous water — do not stop", "fertUr": "—", "fertEn": "—" },
+        { "week": "17-18", "titleUr": "پختگی", "titleEn": "Maturity", "tasksUr": ["پانی کم کریں","دانے پکنے کی علامات دیکھیں","کٹائی کی تیاری"], "tasksEn": ["Reduce irrigation","Watch for ripening signs","Prepare for harvest"], "waterUr": "پانی بند — 2 ہفتے پہلے", "waterEn": "Stop water — 2 weeks before harvest", "fertUr": "کوئی نہیں", "fertEn": "None" },
+        { "week": "19-20", "titleUr": "کٹائی", "titleEn": "Harvest", "tasksUr": ["80% دانے پک جائیں تو کاٹیں","گہائی کریں","نمی 14% سے کم کریں"], "tasksEn": ["Harvest when 80% of grains are ripe","Thresh the crop","Dry to below 14% moisture"], "waterUr": "پانی بند", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" }
       ]
     },
     "potato": {
       "totalWeeks": 14,
       "sowingMonthsUr": "اکتوبر — نومبر",
+      "sowingMonthsEn": "October — November",
       "weeks": [
-        {
-          "week": "1",
-          "titleUr": "بوائی",
-          "tasksUr": [
-            "کند 40-50 گرام کے ٹکڑے کریں",
-            "DAP 50 کلو + پوٹاش 25 کلو فی ایکڑ ملائیں",
-            "کند 3-4 انچ گہرا بوئیں، قطار 2 فٹ"
-          ],
-          "waterUr": "بوائی کے بعد پانی دیں",
-          "fertUr": "DAP 50 کلو + پوٹاش 25 کلو"
-        },
-        {
-          "week": "2-3",
-          "titleUr": "اگاؤ",
-          "tasksUr": [
-            "پودے نکلنے کا انتظار",
-            "مٹی ڈھیلی رکھیں"
-          ],
-          "waterUr": "ہر 6-7 دن ہلکا پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "4-5",
-          "titleUr": "پہلی گوڈی",
-          "tasksUr": [
-            "پہلی گوڈی اور مٹی چڑھانا",
-            "یوریا 35 کلو فی ایکڑ ڈالیں",
-            "کیڑے مار دوا اگر ضروری ہو"
-          ],
-          "waterUr": "ہر 5-7 دن پانی",
-          "fertUr": "یوریا 35 کلو فی ایکڑ"
-        },
-        {
-          "week": "7-8",
-          "titleUr": "کند بننا",
-          "tasksUr": [
-            "دوسری گوڈی اور مٹی چڑھانا",
-            "پوٹاش 25 کلو فی ایکڑ ڈالیں",
-            "لیٹ بلائٹ کا اسپرے کریں"
-          ],
-          "waterUr": "ہر 6-7 دن — نظم آبپاشی",
-          "fertUr": "پوٹاش 25 کلو فی ایکڑ"
-        },
-        {
-          "week": "10-11",
-          "titleUr": "تیز بڑھوتری",
-          "tasksUr": [
-            "فنگی سائیڈ اسپرے جاری رکھیں",
-            "آلو کا رنگ اور سائز چیک کریں"
-          ],
-          "waterUr": "ہر 7 دن پانی",
-          "fertUr": "—"
-        },
-        {
-          "week": "13-14",
-          "titleUr": "کٹائی",
-          "tasksUr": [
-            "پانی بند کریں 2 ہفتے پہلے",
-            "بیل کاٹ دیں — کند پختہ ہو جائیں گے",
-            "آلو کھودیں — خشک موسم میں"
-          ],
-          "waterUr": "پانی بند",
-          "fertUr": "کوئی نہیں"
-        }
+        { "week": "1", "titleUr": "بوائی", "titleEn": "Sowing", "tasksUr": ["کند 40-50 گرام کے ٹکڑے کریں","DAP 50 کلو + پوٹاش 25 کلو فی ایکڑ ملائیں","کند 3-4 انچ گہرا بوئیں، قطار 2 فٹ"], "tasksEn": ["Cut tubers into 40-50 g pieces","Mix DAP 50 kg + Potash 25 kg/acre","Plant tubers 3-4 inches deep, row spacing 2 ft"], "waterUr": "بوائی کے بعد پانی دیں", "waterEn": "Irrigate after sowing", "fertUr": "DAP 50 کلو + پوٹاش 25 کلو", "fertEn": "DAP 50 kg + Potash 25 kg" },
+        { "week": "2-3", "titleUr": "اگاؤ", "titleEn": "Emergence", "tasksUr": ["پودے نکلنے کا انتظار","مٹی ڈھیلی رکھیں"], "tasksEn": ["Wait for plant emergence","Keep soil loose"], "waterUr": "ہر 6-7 دن ہلکا پانی", "waterEn": "Every 6-7 days, light irrigation", "fertUr": "—", "fertEn": "—" },
+        { "week": "4-5", "titleUr": "پہلی گوڈی", "titleEn": "First Hoeing", "tasksUr": ["پہلی گوڈی اور مٹی چڑھانا","یوریا 35 کلو فی ایکڑ ڈالیں","کیڑے مار دوا اگر ضروری ہو"], "tasksEn": ["First hoeing and earthing-up","Apply Urea 35 kg/acre","Pesticide if necessary"], "waterUr": "ہر 5-7 دن پانی", "waterEn": "Every 5-7 days", "fertUr": "یوریا 35 کلو فی ایکڑ", "fertEn": "Urea 35 kg/acre" },
+        { "week": "7-8", "titleUr": "کند بننا", "titleEn": "Tuber Formation", "tasksUr": ["دوسری گوڈی اور مٹی چڑھانا","پوٹاش 25 کلو فی ایکڑ ڈالیں","لیٹ بلائٹ کا اسپرے کریں"], "tasksEn": ["Second hoeing and earthing-up","Apply Potash 25 kg/acre","Spray for late blight"], "waterUr": "ہر 6-7 دن — نظم آبپاشی", "waterEn": "Every 6-7 days — regular irrigation", "fertUr": "پوٹاش 25 کلو فی ایکڑ", "fertEn": "Potash 25 kg/acre" },
+        { "week": "10-11", "titleUr": "تیز بڑھوتری", "titleEn": "Rapid Growth", "tasksUr": ["فنگی سائیڈ اسپرے جاری رکھیں","آلو کا رنگ اور سائز چیک کریں"], "tasksEn": ["Continue fungicide spray","Check potato colour and size"], "waterUr": "ہر 7 دن پانی", "waterEn": "Every 7 days", "fertUr": "—", "fertEn": "—" },
+        { "week": "13-14", "titleUr": "کٹائی", "titleEn": "Harvest", "tasksUr": ["پانی بند کریں 2 ہفتے پہلے","بیل کاٹ دیں — کند پختہ ہو جائیں گے","آلو کھودیں — خشک موسم میں"], "tasksEn": ["Stop irrigation 2 weeks before harvest","Cut vines — tubers will mature","Dig potatoes in dry weather"], "waterUr": "پانی بند", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" }
       ]
     },
     "tomato": {
       "totalWeeks": 16,
       "sowingMonthsUr": "فروری — مارچ / جولائی — اگست",
+      "sowingMonthsEn": "Feb — Mar / Jul — Aug",
       "weeks": [
-        {
-          "week": "1-3",
-          "titleUr": "نرسری",
-          "tasksUr": [
-            "نرسری میں بیج بوئیں",
-            "نرسری گرم اور دھوپ والی جگہ پر",
-            "DAP تھوڑی مقدار میں ڈالیں"
-          ],
-          "waterUr": "روزانہ ہلکا پانی",
-          "fertUr": "تھوڑا DAP"
-        },
-        {
-          "week": "4-5",
-          "titleUr": "پنیری لگانا",
-          "tasksUr": [
-            "30-35 دن کی پنیری لگائیں",
-            "قطار 2 فٹ، بوٹا 1.5 فٹ",
-            "DAP 40 کلو فی ایکڑ ملائیں"
-          ],
-          "waterUr": "لگانے کے بعد فوری پانی",
-          "fertUr": "DAP 40 کلو فی ایکڑ"
-        },
-        {
-          "week": "6-7",
-          "titleUr": "جڑ پکڑنا",
-          "tasksUr": [
-            "گوڈی کریں",
-            "ڈنڈی لگائیں (stake)",
-            "یوریا 25 کلو فی ایکڑ ڈالیں"
-          ],
-          "waterUr": "ہر 4-5 دن پانی",
-          "fertUr": "یوریا 25 کلو فی ایکڑ"
-        },
-        {
-          "week": "9-10",
-          "titleUr": "پھول آنا",
-          "tasksUr": [
-            "پوٹاش 25 کلو فی ایکڑ ڈالیں",
-            "پھول آنے پر اوپر سے پانی نہ دیں",
-            "فنگی سائیڈ اسپرے کریں"
-          ],
-          "waterUr": "ہر 4-5 دن — قطاروں میں",
-          "fertUr": "پوٹاش 25 کلو فی ایکڑ"
-        },
-        {
-          "week": "11-12",
-          "titleUr": "پھل لگنا",
-          "tasksUr": [
-            "اضافی ٹہنیاں چھانٹیں",
-            "کیڑوں کا معائنہ کریں",
-            "یوریا 20 کلو فی ایکڑ ڈالیں"
-          ],
-          "waterUr": "ہر 4-5 دن — یکساں",
-          "fertUr": "یوریا 20 کلو فی ایکڑ"
-        },
-        {
-          "week": "13-15",
-          "titleUr": "پھل پکنا",
-          "tasksUr": [
-            "لال ٹماٹر توڑتے رہیں",
-            "پانی کم کریں",
-            "بیماریوں کا خیال رکھیں"
-          ],
-          "waterUr": "ہر 5-6 دن — کم پانی",
-          "fertUr": "کوئی نہیں"
-        },
-        {
-          "week": "16",
-          "titleUr": "فصل ختم کرنا",
-          "tasksUr": [
-            "سب پھل توڑیں",
-            "پودے اکھاڑیں",
-            "مٹی کو آرام دیں"
-          ],
-          "waterUr": "پانی بند",
-          "fertUr": "کوئی نہیں"
-        }
+        { "week": "1-3", "titleUr": "نرسری", "titleEn": "Nursery", "tasksUr": ["نرسری میں بیج بوئیں","نرسری گرم اور دھوپ والی جگہ پر","DAP تھوڑی مقدار میں ڈالیں"], "tasksEn": ["Sow seed in nursery","Keep nursery in warm, sunny spot","Apply a little DAP"], "waterUr": "روزانہ ہلکا پانی", "waterEn": "Daily light irrigation", "fertUr": "تھوڑا DAP", "fertEn": "Small amount of DAP" },
+        { "week": "4-5", "titleUr": "پنیری لگانا", "titleEn": "Transplanting", "tasksUr": ["30-35 دن کی پنیری لگائیں","قطار 2 فٹ، بوٹا 1.5 فٹ","DAP 40 کلو فی ایکڑ ملائیں"], "tasksEn": ["Transplant 30-35 day seedlings","Row spacing 2 ft, plant spacing 1.5 ft","Mix DAP 40 kg/acre"], "waterUr": "لگانے کے بعد فوری پانی", "waterEn": "Irrigate immediately after transplanting", "fertUr": "DAP 40 کلو فی ایکڑ", "fertEn": "DAP 40 kg/acre" },
+        { "week": "6-7", "titleUr": "جڑ پکڑنا", "titleEn": "Establishment", "tasksUr": ["گوڈی کریں","ڈنڈی لگائیں (stake)","یوریا 25 کلو فی ایکڑ ڈالیں"], "tasksEn": ["Hoeing","Stake the plants","Apply Urea 25 kg/acre"], "waterUr": "ہر 4-5 دن پانی", "waterEn": "Every 4-5 days", "fertUr": "یوریا 25 کلو فی ایکڑ", "fertEn": "Urea 25 kg/acre" },
+        { "week": "9-10", "titleUr": "پھول آنا", "titleEn": "Flowering", "tasksUr": ["پوٹاش 25 کلو فی ایکڑ ڈالیں","پھول آنے پر اوپر سے پانی نہ دیں","فنگی سائیڈ اسپرے کریں"], "tasksEn": ["Apply Potash 25 kg/acre","Avoid overhead watering during flowering","Apply fungicide spray"], "waterUr": "ہر 4-5 دن — قطاروں میں", "waterEn": "Every 4-5 days — furrow irrigation", "fertUr": "پوٹاش 25 کلو فی ایکڑ", "fertEn": "Potash 25 kg/acre" },
+        { "week": "11-12", "titleUr": "پھل لگنا", "titleEn": "Fruit Set", "tasksUr": ["اضافی ٹہنیاں چھانٹیں","کیڑوں کا معائنہ کریں","یوریا 20 کلو فی ایکڑ ڈالیں"], "tasksEn": ["Prune extra branches","Inspect for pests","Apply Urea 20 kg/acre"], "waterUr": "ہر 4-5 دن — یکساں", "waterEn": "Every 4-5 days — consistent", "fertUr": "یوریا 20 کلو فی ایکڑ", "fertEn": "Urea 20 kg/acre" },
+        { "week": "13-15", "titleUr": "پھل پکنا", "titleEn": "Ripening", "tasksUr": ["لال ٹماٹر توڑتے رہیں","پانی کم کریں","بیماریوں کا خیال رکھیں"], "tasksEn": ["Keep picking red tomatoes","Reduce irrigation","Watch for diseases"], "waterUr": "ہر 5-6 دن — کم پانی", "waterEn": "Every 5-6 days — reduced water", "fertUr": "کوئی نہیں", "fertEn": "None" },
+        { "week": "16", "titleUr": "فصل ختم کرنا", "titleEn": "End of Season", "tasksUr": ["سب پھل توڑیں","پودے اکھاڑیں","مٹی کو آرام دیں"], "tasksEn": ["Pick all remaining fruit","Remove plants","Let soil rest"], "waterUr": "پانی بند", "waterEn": "Stop irrigation", "fertUr": "کوئی نہیں", "fertEn": "None" }
       ]
     }
   }

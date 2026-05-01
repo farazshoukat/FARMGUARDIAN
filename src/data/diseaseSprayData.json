@@ -4,55 +4,85 @@
       "sprayNameUr": "کلورپائریفوس 20EC",
       "sprayNameEn": "Chlorpyrifos 20EC",
       "amountPerAcreUr": "500 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں ملا کر",
+      "amountPerAcreEn": "500 ml/acre in 100L water",
       "timingUr": "شام کے وقت پانی دینے کے بعد",
+      "timingEn": "Evening, after irrigation",
       "frequencyUr": "7 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 7-day intervals",
       "cautionUr": "اسپرے کے دوران ماسک اور دستانے لازمی پہنیں",
-      "altSprayUr": "بدل: اسپینوسیڈ 48EC — 75 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Wear mask and gloves during spray",
+      "altSprayUr": "بدل: اسپینوسیڈ 48EC — 75 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Spinosad 48EC — 75 ml/acre"
     },
     "grasshoper": {
       "sprayNameUr": "میلاتھیون 57EC",
       "sprayNameEn": "Malathion 57EC",
       "amountPerAcreUr": "500 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "500 ml/acre in 100L water",
       "timingUr": "صبح سویرے جب ٹڈیاں سست ہوں",
+      "timingEn": "Early morning when locusts are sluggish",
       "frequencyUr": "ضرورت پڑنے پر 10 دن بعد دہرائیں",
+      "frequencyEn": "Repeat after 10 days if needed",
       "cautionUr": "مچھلی والے پانی کے قریب استعمال نہ کریں",
-      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Do not use near fish ponds",
+      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Chlorpyrifos 20EC — 500 ml/acre"
     },
     "leaf beetle": {
       "sprayNameUr": "امیڈاکلوپرڈ 200SL",
       "sprayNameEn": "Imidacloprid 200SL",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "صبح یا شام، پانی دینے کے بعد",
+      "timingEn": "Morning or evening, after irrigation",
       "frequencyUr": "10-14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-14 day intervals",
       "cautionUr": "شہد کی مکھیوں کی موجودگی میں اسپرے نہ کریں",
-      "altSprayUr": "بدل: سائپرمیتھرن 10EC — 250 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Do not spray in presence of honeybees",
+      "altSprayUr": "بدل: سائپرمیتھرن 10EC — 250 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Cypermethrin 10EC — 250 ml/acre"
     },
     "leaf blight": {
       "sprayNameUr": "مینکوزیب 80WP",
       "sprayNameEn": "Mancozeb 80WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح سویرے پانی دینے کے 2-3 گھنٹے بعد",
+      "timingEn": "Early morning, 2-3 hours after irrigation",
       "frequencyUr": "7-10 دن کے وقفے سے 3-4 بار",
+      "frequencyEn": "3-4 times at 7-10 day intervals",
       "cautionUr": "بارش سے پہلے اسپرے نہ کریں",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Do not spray before rain",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     },
     "leaf spot": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "پانی دینے کے بعد صبح یا شام",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "فصل کٹائی سے 14 دن پہلے استعمال نہ کریں",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Do not apply within 14 days of harvest",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "streak virus": {
       "sprayNameUr": "براہ راست اسپرے نہیں",
       "sprayNameEn": "No direct spray (virus)",
       "amountPerAcreUr": "—",
+      "amountPerAcreEn": "—",
       "timingUr": "متاثرہ پودے فوری اکھاڑ کر تلف کریں",
+      "timingEn": "Remove and destroy infected plants immediately",
       "frequencyUr": "وائرس پھیلانے والی مکھیوں کو کنٹرول کریں",
+      "frequencyEn": "Control whiteflies that spread the virus",
       "cautionUr": "امیڈاکلوپرڈ سے سفید مکھیاں کنٹرول کریں تاکہ وائرس نہ پھیلے",
-      "altSprayUr": "مکھیوں کے لیے: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Control whiteflies with Imidacloprid to prevent virus spread",
+      "altSprayUr": "مکھیوں کے لیے: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "For flies: Imidacloprid 200SL — 150 ml/acre"
     }
   },
   "potato": {
@@ -60,19 +90,29 @@
       "sprayNameUr": "مینکوزیب 80WP",
       "sprayNameEn": "Mancozeb 80WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "پانی دینے کے 2-3 گھنٹے بعد، صبح یا شام",
+      "timingEn": "2-3 hours after irrigation, morning or evening",
       "frequencyUr": "7-10 دن کے وقفے سے 3-4 بار",
+      "frequencyEn": "3-4 times at 7-10 day intervals",
       "cautionUr": "بارش آنے والی ہو تو اسپرے مؤخر کریں",
-      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Delay spray if rain is expected",
+      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Chlorothalonil 75WP — 400 g/acre"
     },
     "Late_Blight": {
       "sprayNameUr": "میٹالیکسل + مینکوزیب (ریڈومل گولڈ)",
       "sprayNameEn": "Metalaxyl + Mancozeb (Ridomil Gold)",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "بیماری نظر آتے ہی فوری اسپرے — صبح یا شام",
+      "timingEn": "Spray immediately when disease appears — morning or evening",
       "frequencyUr": "7 دن کے وقفے سے 3-4 بار — فوری علاج ضروری",
+      "frequencyEn": "3-4 times at 7-day intervals — urgent treatment required",
       "cautionUr": "⚠️ دیر سے آنے والا جھلساؤ بہت تیز پھیلتا ہے — فوری کارروائی کریں",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "⚠️ Late blight spreads very fast — act immediately",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     }
   },
   "rice": {
@@ -80,64 +120,99 @@
       "sprayNameUr": "کاپر ہائیڈروکسائیڈ 77WP",
       "sprayNameEn": "Copper Hydroxide 77WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح سویرے — دوپہر کی گرمی میں اسپرے نہ کریں",
+      "timingEn": "Early morning — avoid spraying in afternoon heat",
       "frequencyUr": "10-14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 10-14 day intervals",
       "cautionUr": "پانی میں مچھلی ہو تو اسپرے نہ کریں",
-      "altSprayUr": "بدل: اسٹریپٹومائیسن سلفیٹ — 20 گرام فی ایکڑ"
+      "cautionEn": "Do not spray if fish are present in water",
+      "altSprayUr": "بدل: اسٹریپٹومائیسن سلفیٹ — 20 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Streptomycin Sulfate — 20 g/acre"
     },
     "blast": {
       "sprayNameUr": "ٹرائی سائیکلازول 75WP (Beam)",
       "sprayNameEn": "Tricyclazole 75WP (Beam)",
       "amountPerAcreUr": "80 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "80 g/acre in 100L water",
       "timingUr": "بالی نکلنے سے پہلے اسپرے کریں — صبح یا شام",
+      "timingEn": "Spray before panicle emergence — morning or evening",
       "frequencyUr": "10-14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-14 day intervals",
       "cautionUr": "بلاسٹ کے لیے سب سے مؤثر دوا — جلدی استعمال کریں",
-      "altSprayUr": "بدل: آزوکسی اسٹروبن 25SC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Most effective medicine for blast — apply early",
+      "altSprayUr": "بدل: آزوکسی اسٹروبن 25SC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Azoxystrobin 25SC — 200 ml/acre"
     },
     "brown_spot": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "پانی دینے کے بعد صبح یا شام",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "پوٹاش کھاد بھی ڈالیں — کمی سے بیماری بڑھتی ہے",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Also apply potash fertilizer — deficiency increases disease",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "dead_heart": {
       "sprayNameUr": "فیپرونل 5SC",
       "sprayNameEn": "Fipronil 5SC",
       "amountPerAcreUr": "400 ملی لیٹر فی ایکڑ — کھڑے پانی میں",
+      "amountPerAcreEn": "400 ml/acre in standing water",
       "timingUr": "پنیری لگانے کے 15-20 دن بعد",
+      "timingEn": "15-20 days after transplanting",
       "frequencyUr": "ایک بار کافی — ضرورت پڑے تو 2 ہفتے بعد دہرائیں",
+      "frequencyEn": "Once is enough — repeat after 2 weeks if needed",
       "cautionUr": "تنے کی سنڈی کی وجہ سے ہوتا ہے — کھڑے پانی میں اسپرے",
-      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Caused by stem borer — spray into standing water",
+      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Chlorpyrifos 20EC — 500 ml/acre"
     },
     "downy_mildew": {
       "sprayNameUr": "میٹالیکسل 35WS",
       "sprayNameEn": "Metalaxyl 35WS",
       "amountPerAcreUr": "300 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "300 g/acre in 100L water",
       "timingUr": "صبح سویرے — پانی دینے کے بعد",
+      "timingEn": "Early morning after irrigation",
       "frequencyUr": "10-14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 10-14 day intervals",
       "cautionUr": "نمی زیادہ ہو تو بیماری تیز پھیلتی ہے",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Disease spreads faster in high humidity",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "hispa": {
       "sprayNameUr": "کلورپائریفوس 20EC",
       "sprayNameEn": "Chlorpyrifos 20EC",
       "amountPerAcreUr": "500 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "500 ml/acre in 100L water",
       "timingUr": "شام کے وقت پانی کے بعد",
+      "timingEn": "Evening after irrigation",
       "frequencyUr": "10 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-day intervals",
       "cautionUr": "ہسپا پتوں کو کھا کر سفید کر دیتا ہے — جلد اسپرے کریں",
-      "altSprayUr": "بدل: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Hispa eats leaves turning them white — spray early",
+      "altSprayUr": "بدل: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Imidacloprid 200SL — 150 ml/acre"
     },
     "tungro": {
       "sprayNameUr": "براہ راست اسپرے نہیں",
       "sprayNameEn": "No direct spray (virus)",
       "amountPerAcreUr": "—",
+      "amountPerAcreEn": "—",
       "timingUr": "متاثرہ پودے فوری اکھاڑ کر تلف کریں",
+      "timingEn": "Remove and destroy infected plants immediately",
       "frequencyUr": "سبز پتے کی مکھی کنٹرول کریں — وائرس پھیلانے والی",
+      "frequencyEn": "Control green leafhopper — it spreads the virus",
       "cautionUr": "امیڈاکلوپرڈ سے سبز تلے کو کنٹرول کریں",
-      "altSprayUr": "مکھیوں کے لیے: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Control green leafhopper with Imidacloprid",
+      "altSprayUr": "مکھیوں کے لیے: امیڈاکلوپرڈ 200SL — 150 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "For flies: Imidacloprid 200SL — 150 ml/acre"
     }
   },
   "tomato": {
@@ -145,91 +220,141 @@
       "sprayNameUr": "کاپر ہائیڈروکسائیڈ 77WP",
       "sprayNameEn": "Copper Hydroxide 77WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح سویرے — اوپر سے اسپرے کریں",
+      "timingEn": "Early morning — spray from above",
       "frequencyUr": "7-10 دن کے وقفے سے 3-4 بار",
+      "frequencyEn": "3-4 times at 7-10 day intervals",
       "cautionUr": "اوپر سے پانی دینا بند کریں — بیکٹیریا پانی سے پھیلتا ہے",
-      "altSprayUr": "بدل: اسٹریپٹومائیسن سلفیٹ — 15 گرام فی ایکڑ"
+      "cautionEn": "Stop overhead watering — bacteria spreads through water",
+      "altSprayUr": "بدل: اسٹریپٹومائیسن سلفیٹ — 15 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Streptomycin Sulfate — 15 g/acre"
     },
     "Early_blight": {
       "sprayNameUr": "مینکوزیب 80WP",
       "sprayNameEn": "Mancozeb 80WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح — پانی دینے کے 2-3 گھنٹے بعد",
+      "timingEn": "Morning — 2-3 hours after irrigation",
       "frequencyUr": "7-10 دن کے وقفے سے 3-4 بار",
+      "frequencyEn": "3-4 times at 7-10 day intervals",
       "cautionUr": "متاثرہ پتے توڑ کر پھینکیں",
-      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Remove and discard affected leaves",
+      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Chlorothalonil 75WP — 400 g/acre"
     },
     "Late_blight": {
       "sprayNameUr": "میٹالیکسل + مینکوزیب (ریڈومل گولڈ)",
       "sprayNameEn": "Metalaxyl + Mancozeb (Ridomil Gold)",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "فوری اسپرے — دیر مت کریں",
+      "timingEn": "Spray immediately — do not delay",
       "frequencyUr": "7 دن کے وقفے سے 3-4 بار",
+      "frequencyEn": "3-4 times at 7-day intervals",
       "cautionUr": "⚠️ دیر سے آنے والا جھلساؤ بہت تیز پھیلتا ہے — فوری کارروائی",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "⚠️ Late blight spreads very fast — act immediately",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     },
     "Leaf_Mold": {
       "sprayNameUr": "کلوروتھالونل 75WP",
       "sprayNameEn": "Chlorothalonil 75WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح یا شام — دوپہر میں نہیں",
+      "timingEn": "Morning or evening — not at noon",
       "frequencyUr": "10-14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 10-14 day intervals",
       "cautionUr": "نمی کم کریں — ہوا کا راستہ کھلا رکھیں",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Reduce humidity — keep ventilation open",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "Septoria_leaf_spot": {
       "sprayNameUr": "مینکوزیب 80WP",
       "sprayNameEn": "Mancozeb 80WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح — پانی دینے کے بعد",
+      "timingEn": "Morning after irrigation",
       "frequencyUr": "7-10 دن کے وقفے سے 3 بار",
+      "frequencyEn": "3 times at 7-10 day intervals",
       "cautionUr": "نیچے کے متاثرہ پتے توڑ دیں",
-      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Remove lower affected leaves",
+      "altSprayUr": "بدل: کلوروتھالونل 75WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Chlorothalonil 75WP — 400 g/acre"
     },
     "Spider_mites Two-spotted_spider_mite": {
       "sprayNameUr": "ابامیکٹن 1.8EC",
       "sprayNameEn": "Abamectin 1.8EC",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "صبح سویرے — پتوں کے نیچے بھی اسپرے کریں",
+      "timingEn": "Early morning — spray under leaves too",
       "frequencyUr": "7 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 7-day intervals",
       "cautionUr": "مکڑی کے کیڑے گرمی میں تیز پھیلتے ہیں",
-      "altSprayUr": "بدل: سپیرومیسیفین 240SC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Spider mites spread faster in hot dry weather",
+      "altSprayUr": "بدل: سپیرومیسیفین 240SC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Spiromesifen 240SC — 200 ml/acre"
     },
     "Target_Spot": {
       "sprayNameUr": "آزوکسی اسٹروبن 25SC",
       "sprayNameEn": "Azoxystrobin 25SC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "پانی دینے کے بعد صبح یا شام",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 14-day intervals",
       "cautionUr": "پتوں کو خشک رکھیں — اوپر سے پانی نہ دیں",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Keep leaves dry — no overhead watering",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     },
     "Tomato_Yellow_Leaf_Curl_Virus": {
       "sprayNameUr": "امیڈاکلوپرڈ 200SL (سفید مکھی کنٹرول)",
       "sprayNameEn": "Imidacloprid 200SL (Whitefly Control)",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "صبح یا شام — وائرس سفید مکھی سے پھیلتا ہے",
+      "timingEn": "Morning or evening — virus spreads by whitefly",
       "frequencyUr": "7 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 7-day intervals",
       "cautionUr": "⚠️ متاثرہ پودے اکھاڑ کر تلف کریں — وائرس کا کوئی علاج نہیں",
-      "altSprayUr": "بدل: اسپیرو ٹیٹرامیٹ 150OD — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "⚠️ Remove and destroy infected plants — no cure for virus",
+      "altSprayUr": "بدل: اسپیرو ٹیٹرامیٹ 150OD — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Spirotetramat 150OD — 200 ml/acre"
     },
     "Tomato_mosaic_virus": {
       "sprayNameUr": "براہ راست اسپرے نہیں",
       "sprayNameEn": "No direct spray (virus)",
       "amountPerAcreUr": "—",
+      "amountPerAcreEn": "—",
       "timingUr": "متاثرہ پودے فوری اکھاڑ کر تلف کریں",
+      "timingEn": "Remove and destroy infected plants immediately",
       "frequencyUr": "اوزار جراثیم سے پاک کریں — وائرس پھیل سکتا ہے",
+      "frequencyEn": "Disinfect tools — virus can spread",
       "cautionUr": "⚠️ موزیک وائرس کا کوئی کیمیائی علاج نہیں — صفائی ضروری",
-      "altSprayUr": "—"
+      "cautionEn": "⚠️ No chemical cure for mosaic virus — sanitation is key",
+      "altSprayUr": "—",
+      "altSprayEn": "—"
     },
     "powdery_mildew": {
       "sprayNameUr": "سلفر 80WP",
       "sprayNameEn": "Sulfur 80WP",
       "amountPerAcreUr": "500 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "500 g/acre in 100L water",
       "timingUr": "صبح سویرے — گرم دوپہر میں نہ کریں",
+      "timingEn": "Early morning — do not spray in hot afternoon",
       "frequencyUr": "7 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 7-day intervals",
       "cautionUr": "درجہ حرارت 35°C سے زیادہ ہو تو سلفر اسپرے نہ کریں",
-      "altSprayUr": "بدل: ٹرائی فلوکسی اسٹروبن 50WG — 100 گرام فی ایکڑ"
+      "cautionEn": "Do not use sulfur spray when temperature exceeds 35°C",
+      "altSprayUr": "بدل: ٹرائی فلوکسی اسٹروبن 50WG — 100 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Trifloxystrobin 50WG — 100 g/acre"
     }
   },
   "wheat": {
@@ -237,127 +362,197 @@
       "sprayNameUr": "امیڈاکلوپرڈ 200SL",
       "sprayNameEn": "Imidacloprid 200SL",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "صبح یا شام — پانی دینے کے بعد",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "10-14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-14 day intervals",
       "cautionUr": "شہد کی مکھیوں کی موجودگی میں صبح سویرے اسپرے کریں",
-      "altSprayUr": "بدل: تھائی ایمیتھوکسیم 25WG — 40 گرام فی ایکڑ"
+      "cautionEn": "Spray early morning if honeybees are present",
+      "altSprayUr": "بدل: تھائی ایمیتھوکسیم 25WG — 40 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Thiamethoxam 25WG — 40 g/acre"
     },
     "Black Rust": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "بیماری نظر آتے ہی فوری — صبح یا شام",
+      "timingEn": "Immediately when disease appears — morning or evening",
       "frequencyUr": "14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 14-day intervals",
       "cautionUr": "⚠️ کالا زنگ بہت تیز پھیلتا ہے — فوری اسپرے ضروری",
-      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ"
+      "cautionEn": "⚠️ Black rust spreads very fast — immediate spray essential",
+      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Tebuconazole 25WP — 200 g/acre"
     },
     "Blast": {
       "sprayNameUr": "ٹرائی سائیکلازول 75WP",
       "sprayNameEn": "Tricyclazole 75WP",
       "amountPerAcreUr": "100 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "100 g/acre in 100L water",
       "timingUr": "بالی نکلنے سے پہلے اسپرے کریں",
+      "timingEn": "Spray before panicle emergence",
       "frequencyUr": "10-14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-14 day intervals",
       "cautionUr": "⚠️ گندم بلاسٹ نئی بیماری ہے — فوری زرعی محکمے کو اطلاع دیں",
-      "altSprayUr": "بدل: آزوکسی اسٹروبن 25SC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "⚠️ Wheat blast is a new disease — report to agriculture department immediately",
+      "altSprayUr": "بدل: آزوکسی اسٹروبن 25SC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Azoxystrobin 25SC — 200 ml/acre"
     },
     "Brown Rust": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "صبح یا شام — پانی دینے کے بعد",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "بھورا زنگ پتوں پر بھورے دھبوں کی شکل میں ہوتا ہے",
-      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ"
+      "cautionEn": "Brown rust appears as brown spots on leaves",
+      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Tebuconazole 25WP — 200 g/acre"
     },
     "Common Root Rot": {
       "sprayNameUr": "کاربینڈازم 50WP",
       "sprayNameEn": "Carbendazim 50WP",
       "amountPerAcreUr": "250 گرام فی ایکڑ — بیج پر لگائیں یا مٹی میں",
+      "amountPerAcreEn": "250 g/acre — apply on seed or in soil",
       "timingUr": "بوائی سے پہلے بیج کو اس سے تر کریں",
+      "timingEn": "Treat seed before sowing",
       "frequencyUr": "بوائی سے پہلے ایک بار",
+      "frequencyEn": "Once before sowing",
       "cautionUr": "پانی نکاسی بہتر بنائیں — جڑ سڑن نمی میں بڑھتی ہے",
-      "altSprayUr": "بدل: تھائیرام 75WP — 300 گرام فی ایکڑ بیج پر"
+      "cautionEn": "Improve drainage — root rot increases with excess moisture",
+      "altSprayUr": "بدل: تھائیرام 75WP — 300 گرام فی ایکڑ بیج پر",
+      "altSprayEn": "Alt: Thiram 75WP — 300 g/acre on seed"
     },
     "Fusarium Head Blight": {
       "sprayNameUr": "ٹیبوکونازول 25WP",
       "sprayNameEn": "Tebuconazole 25WP",
       "amountPerAcreUr": "200 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 g/acre in 100L water",
       "timingUr": "بالی نکلتے وقت اسپرے — سب سے اہم وقت",
+      "timingEn": "Spray at heading time — most critical stage",
       "frequencyUr": "7-10 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 7-10 day intervals",
       "cautionUr": "⚠️ فیوزیریم سے متاثرہ دانے کھانے کے قابل نہیں ہوتے",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "⚠️ Grain infected with Fusarium is not fit for consumption",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     },
     "Leaf Blight": {
       "sprayNameUr": "مینکوزیب 80WP",
       "sprayNameEn": "Mancozeb 80WP",
       "amountPerAcreUr": "400 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "400 g/acre in 100L water",
       "timingUr": "صبح — پانی دینے کے 2 گھنٹے بعد",
+      "timingEn": "Morning — 2 hours after irrigation",
       "frequencyUr": "10 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 10-day intervals",
       "cautionUr": "بارش سے پہلے اسپرے نہ کریں",
-      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Do not spray before rain",
+      "altSprayUr": "بدل: پروپیکونازول 25EC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Propiconazole 25EC — 200 ml/acre"
     },
     "Mildew": {
       "sprayNameUr": "ٹرائی فلوکسی اسٹروبن 50WG",
       "sprayNameEn": "Trifloxystrobin 50WG",
       "amountPerAcreUr": "100 گرام فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "100 g/acre in 100L water",
       "timingUr": "صبح سویرے — پانی دینے کے بعد",
+      "timingEn": "Early morning after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "سرد موسم میں ملڈیو زیادہ ہوتی ہے",
-      "altSprayUr": "بدل: سلفر 80WP — 500 گرام فی ایکڑ"
+      "cautionEn": "Mildew is more common in cold weather",
+      "altSprayUr": "بدل: سلفر 80WP — 500 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Sulfur 80WP — 500 g/acre"
     },
     "Mite": {
       "sprayNameUr": "ابامیکٹن 1.8EC",
       "sprayNameEn": "Abamectin 1.8EC",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "صبح سویرے — پتوں کے نیچے بھی اسپرے",
+      "timingEn": "Early morning — spray under leaves too",
       "frequencyUr": "7 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 7-day intervals",
       "cautionUr": "مائیٹ گرم اور خشک موسم میں زیادہ ہوتے ہیں",
-      "altSprayUr": "بدل: سپیرومیسیفین 240SC — 200 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Mites are more prevalent in hot dry weather",
+      "altSprayUr": "بدل: سپیرومیسیفین 240SC — 200 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Spiromesifen 240SC — 200 ml/acre"
     },
     "Septoria": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "صبح یا شام — پانی دینے کے بعد",
+      "timingEn": "Morning or evening after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "بارش کے بعد بیماری تیز ہوتی ہے — احتیاط کریں",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Disease worsens after rain — be cautious",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "Smut": {
       "sprayNameUr": "کاربوکسن + تھائیرام (وٹاواکس)",
       "sprayNameEn": "Carboxin + Thiram (Vitavax)",
       "amountPerAcreUr": "3 گرام فی کلو بیج — بوائی سے پہلے بیج پر لگائیں",
+      "amountPerAcreEn": "3 g/kg seed — apply on seed before sowing",
       "timingUr": "بوائی سے پہلے بیج کو اس سے تر کریں",
+      "timingEn": "Treat seed before sowing",
       "frequencyUr": "بوائی سے پہلے ایک بار",
+      "frequencyEn": "Once before sowing",
       "cautionUr": "سموٹ کا علاج صرف بیج کے علاج سے ممکن ہے",
-      "altSprayUr": "بدل: تھائیرام 75WP — 2 گرام فی کلو بیج"
+      "cautionEn": "Smut can only be controlled by seed treatment",
+      "altSprayUr": "بدل: تھائیرام 75WP — 2 گرام فی کلو بیج",
+      "altSprayEn": "Alt: Thiram 75WP — 2 g/kg seed"
     },
     "Stem fly": {
       "sprayNameUr": "امیڈاکلوپرڈ 200SL",
       "sprayNameEn": "Imidacloprid 200SL",
       "amountPerAcreUr": "150 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "150 ml/acre in 100L water",
       "timingUr": "اگاؤ کے وقت اسپرے کریں",
+      "timingEn": "Spray at crop emergence time",
       "frequencyUr": "10 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 10-day intervals",
       "cautionUr": "بیج کو بھی امیڈاکلوپرڈ سے اچار لگانا فائدہ مند ہے",
-      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ"
+      "cautionEn": "Seed treatment with Imidacloprid is also beneficial",
+      "altSprayUr": "بدل: کلورپائریفوس 20EC — 500 ملی لیٹر فی ایکڑ",
+      "altSprayEn": "Alt: Chlorpyrifos 20EC — 500 ml/acre"
     },
     "Tan spot": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "صبح — پانی دینے کے بعد",
+      "timingEn": "Morning after irrigation",
       "frequencyUr": "14 دن کے وقفے سے 2 بار",
+      "frequencyEn": "2 times at 14-day intervals",
       "cautionUr": "پچھلی فصل کی باقیات جلا دیں یا دبا دیں",
-      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ"
+      "cautionEn": "Burn or bury previous crop residues",
+      "altSprayUr": "بدل: مینکوزیب 80WP — 400 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Mancozeb 80WP — 400 g/acre"
     },
     "Yellow Rust": {
       "sprayNameUr": "پروپیکونازول 25EC",
       "sprayNameEn": "Propiconazole 25EC",
       "amountPerAcreUr": "200 ملی لیٹر فی ایکڑ — 100 لیٹر پانی میں",
+      "amountPerAcreEn": "200 ml/acre in 100L water",
       "timingUr": "بیماری نظر آتے ہی فوری — صبح یا شام",
+      "timingEn": "Immediately when disease appears — morning or evening",
       "frequencyUr": "14 دن کے وقفے سے 2-3 بار",
+      "frequencyEn": "2-3 times at 14-day intervals",
       "cautionUr": "⚠️ پیلا زنگ گندم کی سب سے خطرناک بیماری ہے — فوری اسپرے",
-      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ"
+      "cautionEn": "⚠️ Yellow rust is the most dangerous wheat disease — spray immediately",
+      "altSprayUr": "بدل: ٹیبوکونازول 25WP — 200 گرام فی ایکڑ",
+      "altSprayEn": "Alt: Tebuconazole 25WP — 200 g/acre"
     }
   }
 }

@@ -6,9 +6,11 @@ import {
   ScrollView,
   TouchableOpacity,
   Alert,
+  Switch,
 } from 'react-native';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { COLORS } from '../utils/constants';
 import Card from '../components/Card';
 import Button from '../components/Button';
@@ -16,6 +18,7 @@ import Button from '../components/Button';
 const ProfileScreen = ({ navigation }) => {
   const { user, logout } = useAuth();
   const { t, currentLanguage, toggleLanguage } = useLanguage();
+  const { isDarkMode, toggleTheme, colors } = useTheme();
 
   const handleLogout = () => {
     Alert.alert(
@@ -36,7 +39,7 @@ const ProfileScreen = ({ navigation }) => {
   };
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+    <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={styles.content}>
       <View style={styles.header}>
         <View style={styles.avatar}>
           <Text style={styles.avatarText}>
@@ -75,6 +78,18 @@ const ProfileScreen = ({ navigation }) => {
             {currentLanguage === 'ur' ? 'اردو' : 'English'}
           </Text>
         </TouchableOpacity>
+
+        <View style={styles.settingItem}>
+          <Text style={styles.settingText}>
+            {currentLanguage === 'en' ? 'Dark Mode' : 'ڈارک موڈ'}
+          </Text>
+          <Switch
+            value={isDarkMode}
+            onValueChange={toggleTheme}
+            trackColor={{ false: '#ccc', true: '#4CAF50' }}
+            thumbColor={isDarkMode ? '#fff' : '#f4f3f4'}
+          />
+        </View>
 
         <TouchableOpacity style={styles.settingItem}>
           <Text style={styles.settingText}>{t('profile.notifications')}</Text>

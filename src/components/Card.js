@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS } from '../utils/constants';
+import { useTheme } from '../context/ThemeContext';
 
 const Card = ({
   children,
@@ -10,12 +11,14 @@ const Card = ({
   style,
   elevation = 2,
 }) => {
+  const { colors } = useTheme();
+
   const CardContent = () => (
-    <View style={[styles.card, { elevation }, style]}>
+    <View style={[styles.card, { elevation, backgroundColor: colors.surface, shadowColor: colors.text }, style]}>
       {title && (
         <View style={styles.header}>
-          <Text style={styles.title}>{title}</Text>
-          {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
+          <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
+          {subtitle && <Text style={[styles.subtitle, { color: colors.textSecondary }]}>{subtitle}</Text>}
         </View>
       )}
       {children}
